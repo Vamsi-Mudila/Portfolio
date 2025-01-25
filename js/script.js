@@ -13,11 +13,21 @@ document.querySelector('a[href="#home"]').addEventListener('click', function(e) 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Placeholder functions for buttons
-function subscribe() {
-    alert('Thank you for subscribing!');
+// Contact Modal Logic
+const contactBtn = document.getElementById("contactBtn");
+const contactModal = document.getElementById("contactModal");
+const closeBtn = document.querySelector(".close");
+
+contactBtn.onclick = function() {
+    contactModal.style.display = "block";
 }
 
-function contact() {
-    alert('Feel free to contact me via LinkedIn or email!');
+closeBtn.onclick = function() {
+    contactModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == contactModal) {
+        contactModal.style.display = "none";
+    }
 }
