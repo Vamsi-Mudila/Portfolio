@@ -25,10 +25,16 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    width: 100%;
 }
 
-nav ul li {
-    margin: 0 20px;
+.left {
+    margin-right: auto;
+}
+
+.right-nav {
+    display: flex;
+    gap: 30px;
 }
 
 nav ul li a {
@@ -42,10 +48,6 @@ nav ul li a:hover {
     color: #5cb85c;
 }
 
-nav ul .left {
-    margin-right: auto;
-}
-
 .hero {
     height: 100vh;
     display: flex;
@@ -56,7 +58,7 @@ nav ul .left {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.6rem; /* Increased size */
     margin-bottom: 20px;
     letter-spacing: 2px;
     display: flex;
@@ -69,7 +71,7 @@ nav ul .left {
 }
 
 .logo-img {
-    height: 80px;
+    height: 96px; /* Increased size by 20% */
     width: auto;
     margin: 0 15px;
 }
