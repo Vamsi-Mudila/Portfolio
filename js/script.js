@@ -7,6 +7,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
+// Scroll back to top when clicking "HOME"
+document.querySelector('a[href="#home"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 // Contact Modal Logic
 const contactBtn = document.getElementById("contactBtn");
 const contactModal = document.getElementById("contactModal");
@@ -25,17 +31,3 @@ window.onclick = function(event) {
         contactModal.style.display = "none";
     }
 }
-
-// Interactive background effect
-const canvas = document.getElementById('background');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-document.addEventListener('mousemove', (event) => {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#5cb85c';
-    ctx.beginPath();
-    ctx.arc(event.clientX, event.clientY, 20, 0, Math.PI * 2);
-    ctx.fill();
-});
