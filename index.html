@@ -11,32 +11,47 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#home" class="nav-link">HOME</a></li>
-            <li><a href="#intro" class="nav-link">INTRO</a></li>
-            <li><a href="#services" class="nav-link">SERVICES</a></li>
-            <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
-            <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
-            <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            <li class="left"><a href="#home" class="nav-link">HOME</a></li>
+            <li class="right"><a href="#intro" class="nav-link">INTRO</a></li>
+            <li class="right"><a href="#services" class="nav-link">SERVICES</a></li>
+            <li class="right"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+            <li class="right"><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
+            <li class="right"><a href="#contact" class="nav-link">CONTACT</a></li>
         </ul>
     </nav>
 
     <section id="home" class="hero">
         <div class="content">
-            <h1>VAMSI <span class="logo">MUDILA</span></h1>
+            <h1><span class="underline">VAMSI</span> 
+                <img src="assets/logo.png" alt="Logo" class="logo-img"> 
+                <span class="underline">MUDILA</span>
+            </h1>
             <div class="social-links">
                 <a href="https://github.com/Vamsi-Mudila" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/vamsi-mudila" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p>👋 Hi! I'm a passionate <strong>Data Analyst</strong> specialising in <strong>data visualization</strong> and insights.</p>
-            <p>I've worked with renowned companies and built <strong>educational content</strong> to benefit aspiring analysts. ❤️</p>
+            <p>🚀 Passionate <strong>Data Analyst</strong> with a knack for turning complex data into actionable insights. 
+               Experienced in delivering data-driven solutions that enhance business growth and efficiency.
+               Always eager to explore and innovate in the world of data.</p>
             <div class="buttons">
-                <button onclick="subscribe()">SUBSCRIBE</button>
-                <button onclick="contact()">CONTACT</button>
+                <button id="contactBtn">CONTACT</button>
             </div>
         </div>
         <div class="scroll-down">
             <i class="fa fa-chevron-down"></i>
         </div>
     </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <p><strong>Email:</strong> vamsi.mudila@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vamsi-mudila" target="_blank">linkedin.com/in/vamsi-mudila</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Vamsi-Mudila" target="_blank">github.com/Vamsi-Mudila</a></p>
+        </div>
+    </div>
+
 </body>
 </html>
