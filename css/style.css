@@ -15,18 +15,20 @@ nav {
     padding: 15px 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -38,6 +40,10 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #5cb85c;
+}
+
+nav ul .left {
+    margin-right: auto;
 }
 
 .hero {
@@ -53,11 +59,19 @@ nav ul li a:hover {
     font-size: 3rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero .logo {
-    font-weight: bold;
-    border-bottom: 2px solid #5cb85c;
+.hero .underline {
+    border-bottom: 3px solid #5cb85c;
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+    margin: 0 15px;
 }
 
 .social-links a {
@@ -105,6 +119,41 @@ button:hover {
     cursor: pointer;
 }
 
-.scroll-down:hover {
-    color: #333;
+/* Contact Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal-content a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
