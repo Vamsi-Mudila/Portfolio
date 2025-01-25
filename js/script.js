@@ -26,47 +26,16 @@ window.onclick = function(event) {
     }
 }
 
-// Particle.js configuration
-particlesJS("particles-js", {
-    particles: {
-        number: {
-            value: 80,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        },
-        color: { value: "#5cb85c" },
-        shape: {
-            type: "circle",
-            stroke: { width: 0, color: "#000000" },
-            polygon: { nb_sides: 5 },
-        },
-        opacity: {
-            value: 0.5,
-            random: true,
-            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-        },
-        size: {
-            value: 3,
-            random: true,
-            anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-        },
-        line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#333",
-            opacity: 0.4,
-            width: 1
-        },
-        move: {
-            enable: true,
-            speed: 6,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false
-        }
-    }
+// Interactive background effect
+const canvas = document.getElementById('background');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+document.addEventListener('mousemove', (event) => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#5cb85c';
+    ctx.beginPath();
+    ctx.arc(event.clientX, event.clientY, 20, 0, Math.PI * 2);
+    ctx.fill();
 });
