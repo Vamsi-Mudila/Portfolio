@@ -8,40 +8,47 @@ body {
     text-align: center;
 }
 
-nav {
+.navbar {
     position: fixed;
     width: 100%;
     background: #fff;
-    padding: 15px 50px;
+    padding: 15px 60px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
+.nav-left, .nav-right {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-nav .right-nav {
-    display: flex;
-    gap: 30px;
+.nav-left {
+    margin-left: 20px;
 }
 
-nav ul li a {
+.nav-right {
+    gap: 40px;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     color: #5cb85c;
 }
 
@@ -55,7 +62,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 3.6rem; /* Increased size by 20% */
+    font-size: 3.6rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
     display: flex;
@@ -68,7 +75,7 @@ nav ul li a:hover {
 }
 
 .logo-img {
-    height: 96px; /* Increased size by 20% */
+    height: 96px;
     width: auto;
     margin: 0 15px;
 }
