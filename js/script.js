@@ -7,13 +7,32 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Initialize particles.js with network effect
+// Contact Modal Logic
+const contactBtn = document.getElementById("contactBtn");
+const contactModal = document.getElementById("contactModal");
+const closeBtn = document.querySelector(".close");
+
+contactBtn.onclick = function() {
+    contactModal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+    contactModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == contactModal) {
+        contactModal.style.display = "none";
+    }
+}
+
+// Initialize particles.js with refined effect
 particlesJS("particles-js", {
     particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
+        number: { value: 100, density: { enable: true, value_area: 800 } },
         color: { value: "#5cb85c" },
         shape: { type: "circle" },
-        opacity: { value: 0.3, random: false },
+        opacity: { value: 0.3 },
         size: { value: 3, random: true },
         line_linked: {
             enable: true,
