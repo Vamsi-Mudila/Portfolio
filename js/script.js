@@ -26,7 +26,7 @@ window.onclick = function(event) {
     }
 }
 
-// Initialize particles.js for background animation
+// Initialize particles.js with refined effect
 particlesJS("particles-js", {
     particles: {
         number: { value: 100, density: { enable: true, value_area: 800 } },
