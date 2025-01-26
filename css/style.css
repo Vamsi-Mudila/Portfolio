@@ -1,142 +1,53 @@
-/* General Styling */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    text-align: center;
-    overflow-x: hidden;
+// Smooth scrolling for navigation links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Contact Modal Logic
+const contactBtn = document.getElementById("contactBtn");
+const contactModal = document.getElementById("contactModal");
+const closeBtn = document.querySelector(".close");
+
+contactBtn.onclick = function() {
+    contactModal.style.display = "block";
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    padding: 15px 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    z-index: 1000;
-    text-align: center;
+closeBtn.onclick = function() {
+    contactModal.style.display = "none";
 }
 
-.nav-center {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+window.onclick = function(event) {
+    if (event.target == contactModal) {
+        contactModal.style.display = "none";
+    }
 }
 
-.nav-center li {
-    display: inline;
-}
-
-.nav-center li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-center li a:hover {
-    color: #5cb85c;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;  
-    position: relative;
-}
-
-/* Particles Background */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    z-index: -1;
-}
-
-.logo-img {
-    height: 120px; 
-    width: auto;
-    margin: 0 20px; 
-}
-
-/* Intro Section */
-.intro-section {
-    padding: 80px 20px;
-    text-align: left;
-    background-color: #f8f9fa;
-}
-
-.intro-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.profile-img {
-    width: 250px;
-    border-radius: 10px;
-}
-
-.intro-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.intro-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.intro-links a {
-    padding: 12px 20px;
-    border: 2px solid #5cb85c;
-    color: #5cb85c;
-    text-decoration: none;
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.intro-links a:hover {
-    background: #5cb85c;
-    color: #fff;
-}
-
-/* Contact Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    width: 40%;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.close {
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
+// Initialize particles.js with refined effect
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: "#5cb85c" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3, random: true },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#5cb85c",
+            opacity: 0.4,
+            width: 1
+        },
+        move: { enable: true, speed: 2 }
+    },
+    interactivity: {
+        events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" }
+        }
+    },
+    retina_detect: true
+});
