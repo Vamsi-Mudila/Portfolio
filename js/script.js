@@ -26,19 +26,25 @@ window.onclick = function(event) {
     }
 }
 
-// Initialize Particles.js
+// Initialize Particles.js for a minimal effect
 particlesJS("particles-js", {
     particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
+        number: { value: 50, density: { enable: true, value_area: 800 } },
         color: { value: "#5cb85c" },
         shape: { type: "circle" },
-        move: { enable: true, speed: 6 },
-        line_linked: { enable: true, distance: 150, color: "#5cb85c" }
+        opacity: { value: 0.3, random: false },
+        size: { value: 3, random: true },
+        move: { enable: true, speed: 2, direction: "none", random: true, out_mode: "out" },
+        line_linked: { enable: true, distance: 150, color: "#5cb85c", opacity: 0.4, width: 1 }
     },
     interactivity: {
         events: {
             onhover: { enable: true, mode: "repulse" },
             onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+            repulse: { distance: 100, duration: 0.4 }
         }
-    }
+    },
+    retina_detect: true
 });
