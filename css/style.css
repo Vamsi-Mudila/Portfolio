@@ -43,16 +43,7 @@ body {
     color: #5cb85c;
 }
 
-/* Background Styling */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    z-index: -1;
-}
-
-/* Hero Section Styling */
+/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -63,14 +54,13 @@ body {
     position: relative;
 }
 
-.content {
-    margin-top: -80px;
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 4.5rem; 
-    font-weight: bold;
+/* Particles Background */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
 }
 
 .logo-img {
@@ -79,47 +69,52 @@ body {
     margin: 0 20px; 
 }
 
-p {
-    font-size: 1.2rem;  
-    max-width: 700px;  
-    line-height: 1.8;
-    margin: 20px auto;
+/* Intro Section */
+.intro-section {
+    padding: 80px 20px;
+    text-align: left;
+    background-color: #f8f9fa;
 }
 
-/* Social Links Styling */
-.social-links a {
-    color: #333;
-    font-size: 3rem;
-    margin: 0 15px;
-    transition: color 0.3s;
+.intro-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
-.social-links a:hover {
-    color: #5cb85c;
+.profile-img {
+    width: 250px;
+    border-radius: 10px;
 }
 
-/* Buttons Styling */
-.buttons {
-    margin-top: 15px;
+.intro-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.buttons button {
-    padding: 15px 30px;
+.intro-content p {
     font-size: 1.1rem;
-    border: 2px solid #5cb85c;
-    background: none;
-    color: #5cb85c;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-.buttons button:hover {
+.intro-links a {
+    padding: 12px 20px;
+    border: 2px solid #5cb85c;
+    color: #5cb85c;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.intro-links a:hover {
     background: #5cb85c;
     color: #fff;
 }
 
-/* Contact Modal Styling */
+/* Contact Modal */
 .modal {
     display: none;
     position: fixed;
@@ -138,21 +133,9 @@ p {
     width: 40%;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.modal-content a {
-    color: #5cb85c;
-    text-decoration: none;
-}
-
-.modal-content a:hover {
-    text-decoration: underline;
 }
 
 .close {
-    color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
