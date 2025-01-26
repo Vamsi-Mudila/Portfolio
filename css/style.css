@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar Styling */
 .navbar {
     position: fixed;
     width: 100%;
@@ -28,6 +27,10 @@ body {
     gap: 50px;
 }
 
+.nav-center li {
+    display: inline;
+}
+
 .nav-center li a {
     text-decoration: none;
     color: #333;
@@ -40,17 +43,7 @@ body {
     color: #5cb85c;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    position: relative;
-}
-
+/* Background Styling */
 #vanta-bg {
     position: absolute;
     bottom: 0;
@@ -60,58 +53,109 @@ body {
     z-index: -1;
 }
 
-/* Intro Section */
-.intro {
-    padding: 80px 15%;
-    text-align: left;
-    background: #f8f9fa;
-}
-
-.intro-container {
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
-}
-
-.profile-img {
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.intro-text h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.intro-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* Timeline */
-.timeline {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
+    padding: 30px;  
     position: relative;
 }
 
-.timeline-item {
+.content {
+    margin-top: -100px;  /* Moves content up to avoid overlapping rings */
     text-align: center;
 }
 
-.timeline-item h3 {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-}
-
-.timeline-item p {
-    font-style: italic;
-    color: #777;
-}
-
-.timeline-item span {
+.content h1 {
+    font-size: 4.5rem; 
     font-weight: bold;
+}
+
+.logo-img {
+    height: 120px; 
+    width: auto;
+    margin: 0 20px; 
+}
+
+p {
+    font-size: 1.2rem;  
+    max-width: 700px;  
+    line-height: 1.8;
+    margin: 20px auto;
+}
+
+/* Social Links Styling */
+.social-links a {
+    color: #333;
+    font-size: 3rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
     color: #5cb85c;
+}
+
+/* Buttons Styling */
+.buttons {
+    margin-top: 15px;  
+}
+
+.buttons button {
+    padding: 15px 30px;  
+    font-size: 1.1rem;
+    border: 2px solid #5cb85c;
+    background: none;
+    color: #5cb85c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 10px;
+}
+
+.buttons button:hover {
+    background: #5cb85c;
+    color: #fff;
+}
+
+/* Contact Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal-content a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
