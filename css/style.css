@@ -8,38 +8,35 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar Styling */
 .navbar {
     position: fixed;
     width: 100%;
     background: #fff;
-    padding: 20px 60px;
+    padding: 15px 60px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 1000;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .nav-left {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex: 1;
+    margin-left: 20px;
 }
 
 .nav-right {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
     gap: 40px;
-    margin-right: 20%;
+    margin-right: 20px;
 }
 
-.nav-left li,
-.nav-right li {
+.navbar ul li {
     display: inline;
 }
 
@@ -55,7 +52,6 @@ body {
     color: #5cb85c;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -66,7 +62,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
     display: flex;
@@ -79,9 +75,9 @@ body {
 }
 
 .logo-img {
-    height: 110px;
+    height: 96px;
     width: auto;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .social-links a {
@@ -98,25 +94,22 @@ body {
 p {
     max-width: 600px;
     margin: 10px auto;
-    line-height: 1.8;
-    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 button {
-    padding: 15px 30px;
+    padding: 12px 25px;
     border: 2px solid #5cb85c;
     background: none;
     color: #5cb85c;
     font-weight: bold;
-    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s;
     margin: 10px;
-    border-radius: 5px;
 }
 
 button:hover {
@@ -124,7 +117,6 @@ button:hover {
     color: #fff;
 }
 
-/* Scroll down icon */
 .scroll-down {
     position: absolute;
     bottom: 20px;
@@ -148,7 +140,7 @@ button:hover {
 .modal-content {
     background-color: #fff;
     margin: 15% auto;
-    padding: 30px;
+    padding: 20px;
     width: 40%;
     text-align: center;
     border-radius: 10px;
