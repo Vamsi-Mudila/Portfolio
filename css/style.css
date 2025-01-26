@@ -7,6 +7,7 @@ body {
     text-align: center;
 }
 
+/* Navigation Bar */
 .navbar {
     position: fixed;
     width: 100%;
@@ -42,11 +43,28 @@ body {
     color: #5cb85c;
 }
 
-/* Background Styling */
-#vanta-bg {
+/* Hero Section */
+#home {
+    position: relative;
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vanta-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
     position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #333;
 }
 
 .hero h1 {
@@ -105,10 +123,24 @@ button:hover {
     color: #fff;
 }
 
-.scroll-down {
-    position: absolute;
-    bottom: 20px;
-    font-size: 1.5rem;
-    color: #5cb85c;
-    cursor: pointer;
+/* Contact Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
