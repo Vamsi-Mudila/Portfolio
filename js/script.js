@@ -7,12 +7,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Scroll back to top when clicking "HOME"
-document.querySelector('a[href="#home"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
 // Contact Modal Logic
 const contactBtn = document.getElementById("contactBtn");
 const contactModal = document.getElementById("contactModal");
@@ -31,3 +25,20 @@ window.onclick = function(event) {
         contactModal.style.display = "none";
     }
 }
+
+// Initialize Particles.js
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#5cb85c" },
+        shape: { type: "circle" },
+        move: { enable: true, speed: 6 },
+        line_linked: { enable: true, distance: 150, color: "#5cb85c" }
+    },
+    interactivity: {
+        events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" }
+        }
+    }
+});
