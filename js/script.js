@@ -26,11 +26,28 @@ window.onclick = function(event) {
     }
 }
 
-// Particles effect
+// Initialize particles.js for background animation
 particlesJS("particles-js", {
     particles: {
-        number: { value: 100 },
-        move: { speed: 2 },
-        line_linked: { enable: true }
-    }
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: "#5cb85c" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3, random: true },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#5cb85c",
+            opacity: 0.4,
+            width: 1
+        },
+        move: { enable: true, speed: 2 }
+    },
+    interactivity: {
+        events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" }
+        }
+    },
+    retina_detect: true
 });
