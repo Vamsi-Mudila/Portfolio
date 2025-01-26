@@ -15,9 +15,7 @@ body {
     padding: 15px 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .nav-center {
@@ -25,14 +23,15 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    gap: 50px; /* Space between items */
 }
 
-.navbar ul li {
+.nav-center li {
     display: inline;
 }
 
-.navbar ul li a {
+.nav-center li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -40,7 +39,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover {
+.nav-center li a:hover {
     color: #5cb85c;
 }
 
