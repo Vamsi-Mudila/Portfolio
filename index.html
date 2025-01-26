@@ -8,7 +8,7 @@
     <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.rings.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -58,7 +58,7 @@
     </div>
 
     <script>
-        VANTA.BIRDS({
+        VANTA.RINGS({
             el: "#vanta-bg",
             mouseControls: true,
             touchControls: true,
@@ -68,14 +68,8 @@
             scale: 1.00,
             scaleMobile: 1.00,
             backgroundColor: 0xffffff, 
-            color1: 0xff0000, 
-            color2: 0x1d1fff,
-            birdSize: 1.00,
-            wingSpan: 30,
-            speedLimit: 5,
-            separation: 20,
-            alignment: 20,
-            cohesion: 20
+            color: 0x88ff00,  // Customizing the color from your screenshot
+            backgroundAlpha: 1.0
         });
     </script>
 </body>
