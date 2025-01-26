@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Navbar Styling */
 .navbar {
     position: fixed;
     width: 100%;
@@ -46,87 +47,71 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;  
+    padding: 30px;
     position: relative;
 }
 
-.content {
-    margin-top: -100px;
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 4.5rem;
-}
-
-.logo-img {
-    height: 120px;
-    width: auto;
-    margin: 0 20px;
-}
-
-p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-.social-links a {
-    color: #333;
-    font-size: 3rem;
-    margin: 0 15px;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #5cb85c;
+#vanta-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw; 
+    height: 50vh;
+    z-index: -1;
 }
 
 /* Intro Section */
 .intro {
-    padding: 100px 50px;
-    background: #f8f9fa;
+    padding: 80px 15%;
     text-align: left;
+    background: #f8f9fa;
 }
 
 .intro-container {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.profile-pic {
+.profile-img {
     width: 250px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .intro-text h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
 .intro-text p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-.intro-buttons .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: 2px solid #5cb85c;
-    text-decoration: none;
-    color: #5cb85c;
+/* Timeline */
+.timeline {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timeline-item {
+    text-align: center;
+}
+
+.timeline-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-style: italic;
+    color: #777;
+}
+
+.timeline-item span {
     font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.intro-buttons .btn:hover {
-    background: #5cb85c;
-    color: #fff;
+    color: #5cb85c;
 }
