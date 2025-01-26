@@ -43,7 +43,7 @@ body {
     color: #5cb85c;
 }
 
-/* Background Styling */
+/* Particle Background Styling */
 #particles-js {
     position: absolute;
     width: 100%;
@@ -98,7 +98,7 @@ p {
     color: #5cb85c;
 }
 
-/* Buttons Styling */
+/* Button Styling */
 .buttons {
     margin-top: 15px;  
 }
@@ -118,43 +118,4 @@ p {
 .buttons button:hover {
     background: #5cb85c;
     color: #fff;
-}
-
-/* Contact Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    width: 40%;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.modal-content a {
-    color: #5cb85c;
-    text-decoration: none;
-}
-
-.modal-content a:hover {
-    text-decoration: underline;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
 }
