@@ -5,6 +5,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -23,7 +24,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 50px; /* Space between items */
+    gap: 50px;
 }
 
 .nav-center li {
@@ -44,8 +45,21 @@ body {
 
 /* Background Styling */
 #vanta-bg {
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw; /* Covering only bottom-right */
+    height: 50vh;
+    z-index: -1;
+}
+
+.hero {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
     position: relative;
 }
 
