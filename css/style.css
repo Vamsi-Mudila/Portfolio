@@ -43,16 +43,6 @@ body {
     color: #5cb85c;
 }
 
-/* Background Styling */
-#vanta-bg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50vw; 
-    height: 50vh;
-    z-index: -1;
-}
-
 /* Hero Section Styling */
 .hero {
     height: 100vh;
@@ -65,7 +55,7 @@ body {
 }
 
 .content {
-    margin-top: -100px;  /* Moves content up to avoid overlapping rings */
+    margin-top: -100px;  /* Moves content up */
     text-align: center;
 }
 
