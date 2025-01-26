@@ -12,28 +12,20 @@ body {
     position: fixed;
     width: 100%;
     background: #fff;
-    padding: 15px 60px;
+    padding: 15px 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.nav-left, .nav-right {
+.nav-center {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-}
-
-.nav-left {
-    margin-left: 20px;
-}
-
-.nav-right {
     gap: 40px;
-    margin-right: 20px;
 }
 
 .navbar ul li {
