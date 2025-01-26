@@ -65,11 +65,13 @@ body {
 }
 
 .content {
-    margin-top: -40px;  /* Moves content up */
+    margin-top: -100px;  /* Moves content up to avoid overlapping rings */
+    text-align: center;
 }
 
 .content h1 {
     font-size: 4.5rem; /* Increase heading size */
+    font-weight: bold;
 }
 
 .logo-img {
@@ -82,18 +84,24 @@ p {
     font-size: 1.2rem;  
     max-width: 700px;  
     line-height: 1.8;
+    margin: 20px auto;
 }
 
-/* Updated Social Links Styling */
+/* Social Links Styling */
 .social-links a {
     color: #333;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: 0 15px;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
     color: #5cb85c;
+}
+
+/* Buttons Styling */
+.buttons {
+    margin-top: 15px;  /* Adjusting to ensure spacing below content */
 }
 
 .buttons button {
