@@ -64,7 +64,7 @@ body {
 }
 
 .content {
-    margin-top: -100px;
+    margin-top: -80px;
     text-align: center;
 }
 
@@ -139,4 +139,21 @@ p {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal-content a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
