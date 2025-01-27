@@ -218,6 +218,7 @@ p {
     width: 90%;
     height: 3px;
     background: #5cb85c;
+    z-index: -1;
 }
 
 /* Roadmap Container */
@@ -233,7 +234,7 @@ p {
     text-align: center;
     position: relative;
     width: 18%;
-    font-size: 0.9rem; /* Reduced size */
+    font-size: 0.85rem; /* Reduced size */
 }
 
 /* Timeline Dots */
@@ -244,15 +245,15 @@ p {
     background: #5cb85c;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
+    top: -5px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     border: 2px solid #fff;
 }
 
 /* Title and University/Company Styling Above the Line */
 .roadmap-item h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
@@ -261,7 +262,7 @@ p {
 .roadmap-item p {
     font-style: italic;
     color: #777;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 10px;
 }
 
@@ -270,7 +271,10 @@ p {
     font-weight: bold;
     font-size: 0.9rem;
     color: #5cb85c;
-    margin-top: 25px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Responsive Styling for Smaller Screens */
