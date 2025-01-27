@@ -94,28 +94,74 @@
 <section id="services" class="services">
     <h2>Services</h2>
     <p class="services-description">
-        I offer a wide range of services to help you make the most of your data. From freelancing projects to guidance on assignments, 
-        I provide solutions tailored to your needs in the data domain.
+        Let me help you make better use of your data. I offer freelancing, assignment assistance, and guidance on tools in the data domain.
     </p>
     <div class="services-container">
-        <div class="service-item">
+        <div class="service-item" id="data-analysis">
             <div class="icon"><i class="fas fa-chart-line"></i></div>
             <h3>Data Analysis</h3>
-            <p>Get insights from your data through predictive analytics, data cleansing, and statistical analysis. Tailored reports and visualisations delivered.</p>
+            <p>Transform raw data into actionable insights with tailored reports and advanced analytics.</p>
+            <button class="read-more-btn" onclick="openModal('modal-analysis')">Learn More</button>
         </div>
-        <div class="service-item">
+        <div class="service-item" id="database-management">
             <div class="icon"><i class="fas fa-database"></i></div>
             <h3>Database Management</h3>
-            <p>Freelance support with database creation, integration, and quality assurance to ensure efficient data handling and management.</p>
+            <p>Freelance support for database creation, integration, and quality assurance.</p>
+            <button class="read-more-btn" onclick="openModal('modal-database')">Learn More</button>
         </div>
-        <div class="service-item">
+        <div class="service-item" id="tool-assistance">
             <div class="icon"><i class="fas fa-tools"></i></div>
             <h3>Tool Assistance</h3>
-            <p>Support and training for tools like Python, SQL, Tableau, Power BI, and Excel to enhance your projects and workflows.</p>
+            <p>Guidance and training for Python, SQL, Tableau, Power BI, and more.</p>
+            <button class="read-more-btn" onclick="openModal('modal-tools')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Modal for Data Analysis -->
+    <div class="modal" id="modal-analysis">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-analysis')">&times;</span>
+            <h3>Data Analysis</h3>
+            <p>I can help you with:</p>
+            <ul>
+                <li>Predictive analytics and trend analysis</li>
+                <li>Data cleansing and preparation</li>
+                <li>Building customised dashboards and visualisations</li>
+            </ul>
+            <p>Let's turn your data into powerful business insights!</p>
+        </div>
+    </div>
+
+    <!-- Modal for Database Management -->
+    <div class="modal" id="modal-database">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-database')">&times;</span>
+            <h3>Database Management</h3>
+            <p>I provide freelance support for:</p>
+            <ul>
+                <li>Database design and integration</li>
+                <li>Data migration and transformation</li>
+                <li>Ensuring data quality and consistency</li>
+            </ul>
+            <p>Optimise your database systems for seamless performance.</p>
+        </div>
+    </div>
+
+    <!-- Modal for Tool Assistance -->
+    <div class="modal" id="modal-tools">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-tools')">&times;</span>
+            <h3>Tool Assistance</h3>
+            <p>Get personalised training in:</p>
+            <ul>
+                <li>Python libraries like Pandas, NumPy, and Matplotlib</li>
+                <li>SQL queries and database handling</li>
+                <li>Visualisation tools like Tableau and Power BI</li>
+            </ul>
+            <p>Master the tools that empower your data-driven projects.</p>
         </div>
     </div>
 </section>
-
 
 
     <div id="contactModal" class="modal">
