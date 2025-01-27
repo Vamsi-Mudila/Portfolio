@@ -279,7 +279,7 @@ p {
     font-size: 0.9rem;
     color: #5cb85c;
     position: relative;
-    top: 25px; /* Moves dates further below the line */
+    top: 15px; /* Moves dates further below the line */
     z-index: 2;
 }
 
