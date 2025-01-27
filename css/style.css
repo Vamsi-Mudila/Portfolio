@@ -204,23 +204,27 @@ p {
 .roadmap {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 50px;
     position: relative;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 50px auto 0;
     border-top: 2px solid #5cb85c;
+    padding-top: 40px;
 }
 
 .roadmap-item {
     text-align: center;
     position: relative;
     padding-top: 20px;
+    flex-basis: 30%;
 }
 
 .roadmap-item h4 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+    margin-bottom: 5px;
 }
 
 .roadmap-item p {
@@ -246,3 +250,4 @@ p {
     left: 50%;
     transform: translateX(-50%);
 }
+
