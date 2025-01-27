@@ -55,13 +55,14 @@ particlesJS("particles-js", {
 
 // Modal Open/Close Functions
 function openModal(modalId) {
-    document.getElementById(modalId).style.display = "flex";
+    document.getElementById(modalId).style.display = "block";
 }
 
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
 }
 
+// Close Modal on Outside Click
 window.onclick = function (event) {
     const modals = document.querySelectorAll('.modal');
     modals.forEach((modal) => {
@@ -70,3 +71,4 @@ window.onclick = function (event) {
         }
     });
 };
+
