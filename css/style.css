@@ -103,7 +103,7 @@ p {
     margin-top: 15px;
 }
 
-.buttons button {
+.buttons button, .buttons .cv-btn {
     padding: 15px 30px;
     font-size: 1.1rem;
     border: 2px solid #5cb85c;
@@ -112,9 +112,11 @@ p {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
+    margin: 10px;
+    text-decoration: none;
 }
 
-.buttons button:hover {
+.buttons button:hover, .buttons .cv-btn:hover {
     background: #5cb85c;
     color: #fff;
 }
