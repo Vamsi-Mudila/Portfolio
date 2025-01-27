@@ -10,21 +10,26 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // Contact Modal Logic
 const contactBtn = document.getElementById("contactBtn");
 const contactModal = document.getElementById("contactModal");
-const closeBtn = document.querySelector(".close");
 
-contactBtn.onclick = function() {
+contactBtn.onclick = function () {
     contactModal.style.display = "block";
-}
+};
 
-closeBtn.onclick = function() {
-    contactModal.style.display = "none";
-}
-
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == contactModal) {
         contactModal.style.display = "none";
     }
-}
+};
+
+// Ensure all modal close buttons are functional
+document.querySelectorAll('.modal .close').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const modal = event.target.closest('.modal');
+        if (modal) {
+            modal.style.display = "none";
+        }
+    });
+});
 
 // Initialize particles.js with refined effect
 particlesJS("particles-js", {
@@ -52,6 +57,19 @@ particlesJS("particles-js", {
     retina_detect: true
 });
 
+// Filter Portfolio Items
+document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
 
 // Modal Open/Close Functions
 function openModal(modalId) {
@@ -71,19 +89,9 @@ function closeModal(modalId) {
 // Close Modal on Outside Click
 window.onclick = function (event) {
     const modals = document.querySelectorAll('.modal');
-    modals.forEach((modal) => {
+    modals.forEach(modal => {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     });
 };
-
-// Ensure all modal close buttons are functional
-document.querySelectorAll('.modal .close').forEach(button => {
-    button.addEventListener('click', (event) => {
-        const modal = event.target.closest('.modal');
-        if (modal) {
-            modal.style.display = "none";
-        }
-    });
-});
