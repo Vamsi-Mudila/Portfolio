@@ -259,7 +259,7 @@ p {
     color: #333;
     margin-bottom: 5px;
     position: relative;
-    top: -35px; /* Ensures consistent spacing above the node */
+    top: -40px; /* Ensures consistent spacing above the node */
 }
 
 /* University/Company Styling */
@@ -279,7 +279,7 @@ p {
     font-size: 0.9rem;
     color: #5cb85c;
     position: relative;
-    top: 5px; /* Moves dates further below the line */
+    top: 2px; /* Moves dates further below the line */
     z-index: 2;
 }
 
