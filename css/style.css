@@ -203,11 +203,14 @@ p {
 /* Roadmap Section Styling */
 .roadmap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1100px;
     margin: 60px auto;
     position: relative;
+    padding-top: 50px;
 }
 
 .roadmap::before {
@@ -216,27 +219,16 @@ p {
     top: 50%;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 3px;
     background: #5cb85c;
     z-index: -1;
 }
 
 .roadmap-item {
     text-align: center;
-    width: 100%;
-    max-width: 220px;
+    width: 200px;
     position: relative;
-    margin-bottom: 30px;
-}
-
-.roadmap-item:nth-child(odd) {
-    align-self: flex-start;
-    text-align: left;
-}
-
-.roadmap-item:nth-child(even) {
-    align-self: flex-end;
-    text-align: right;
+    padding-top: 30px;
 }
 
 .roadmap-item::before {
@@ -246,13 +238,14 @@ p {
     background: #5cb85c;
     border-radius: 50%;
     position: absolute;
-    top: -10px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid #fff;
 }
 
 .roadmap-item h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
@@ -267,19 +260,34 @@ p {
 
 .roadmap-item .year {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #5cb85c;
 }
 
-/* Responsive Styling */
+/* Responsive Styling for Roadmap */
 @media (max-width: 768px) {
-    .roadmap::before {
-        left: 20px;
+    .roadmap {
+        flex-direction: column;
     }
 
-    .roadmap-item:nth-child(odd),
-    .roadmap-item:nth-child(even) {
-        align-self: center;
-        text-align: center;
+    .roadmap::before {
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 3px;
+    }
+
+    .roadmap-item {
+        text-align: left;
+        width: 100%;
+        padding-top: 20px;
+        position: relative;
+    }
+
+    .roadmap-item::before {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
+
