@@ -233,8 +233,7 @@ p {
     text-align: center;
     position: relative;
     width: 18%;
-    font-size: 0.9rem; /* Reduced size */
-     padding-top: 20px;
+    font-size: 0.8rem; /* Reduced size */
 }
 
 /* Timeline Dots */
