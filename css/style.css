@@ -204,8 +204,8 @@ p {
 .roadmap {
     position: relative;
     max-width: 1100px;
-    margin: 100px auto;  /* Added some extra margin above */
-    padding: 50px 20px;
+    margin: 80px auto;
+    padding: 80px 20px; /* Added space above the roadmap line */
     text-align: center;
 }
 
@@ -213,7 +213,7 @@ p {
 .roadmap::before {
     content: "";
     position: absolute;
-    top: 55%; /* Moved line slightly lower to create space */
+    top: 50%;
     left: 5%;
     width: 90%;
     height: 3px;
@@ -233,8 +233,7 @@ p {
     text-align: center;
     position: relative;
     width: 18%;
-    font-size: 0.9rem;
-    padding-top: 20px; /* Added extra padding to give space above the line */
+    font-size: 0.9rem; /* Reduced size */
 }
 
 /* Timeline Dots */
@@ -245,18 +244,18 @@ p {
     background: #5cb85c;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
+    top: -8px; /* Adjusted for better spacing */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     border: 2px solid #fff;
 }
 
 /* Title and University/Company Styling Above the Line */
 .roadmap-item h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 15px; /* Added extra space */
 }
 
 .roadmap-item p {
@@ -271,13 +270,13 @@ p {
     font-weight: bold;
     font-size: 0.9rem;
     color: #5cb85c;
-    margin-top: 25px;
+    margin-top: 20px; /* Increased margin for better spacing */
 }
 
 /* Responsive Styling for Smaller Screens */
 @media (max-width: 768px) {
     .roadmap::before {
-        top: 25px;
+        top: 20px;
         left: 10%;
         width: 80%;
     }
@@ -293,7 +292,7 @@ p {
     }
 
     .roadmap-item::before {
-        top: 25px;
+        top: 20px;
     }
 
     .roadmap-item .year {
