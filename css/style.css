@@ -209,11 +209,11 @@ p {
     text-align: center;
 }
 
-/* Single Straight Roadmap Line with Additional Space Above */
+/* Single Straight Roadmap Line */
 .roadmap::before {
     content: "";
     position: absolute;
-    top: 55%; /* Adjusted to add more space above */
+    top: 50%;
     left: 5%;
     width: 90%;
     height: 3px;
@@ -244,7 +244,7 @@ p {
     background: #5cb85c;
     border-radius: 50%;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid #fff;
@@ -256,7 +256,7 @@ p {
     font-weight: bold;
     color: #333;
     position: absolute;
-    top: -60px; /* Adjusted for space above the line */
+    top: -50px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -268,7 +268,7 @@ p {
     color: #777;
     font-size: 0.9rem;
     position: absolute;
-    top: -35px; /* Adjusted for space above the line */
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -281,7 +281,7 @@ p {
     font-size: 0.9rem;
     color: #5cb85c;
     position: absolute;
-    top: 45px; /* Slightly moved down */
+    top: 35px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
