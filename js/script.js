@@ -72,6 +72,7 @@ document.querySelectorAll('.filter-btn').forEach(button => {
 });
 
 // Modal Open/Close Functions
+// Open Modal
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
@@ -79,6 +80,7 @@ function openModal(modalId) {
     }
 }
 
+// Close Modal
 function closeModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
