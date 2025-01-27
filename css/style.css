@@ -233,7 +233,7 @@ p {
     text-align: center;
     position: relative;
     width: 18%;
-    font-size: 0.9rem; /* Reduced size */
+    font-size: 0.9rem;
 }
 
 /* Timeline Dots */
@@ -255,14 +255,24 @@ p {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
 }
 
 .roadmap-item p {
     font-style: italic;
     color: #777;
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
 }
 
 /* Dates Positioned Below the Line */
@@ -270,7 +280,12 @@ p {
     font-weight: bold;
     font-size: 0.9rem;
     color: #5cb85c;
-    margin-top: 25px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
 }
 
 /* Responsive Styling for Smaller Screens */
