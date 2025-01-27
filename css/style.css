@@ -233,7 +233,7 @@ p {
     text-align: center;
     position: relative;
     width: 18%;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Reduced size */
 }
 
 /* Timeline Dots */
@@ -250,7 +250,7 @@ p {
     border: 2px solid #fff;
 }
 
-/* Title and University/Company Styling Above the Line */
+/* Titles and Institutions Above the Line */
 .roadmap-item h4 {
     font-size: 1rem;
     font-weight: bold;
@@ -259,8 +259,8 @@ p {
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
     width: max-content;
+    text-align: center;
 }
 
 .roadmap-item p {
@@ -271,7 +271,6 @@ p {
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
     width: max-content;
 }
 
@@ -281,10 +280,9 @@ p {
     font-size: 0.9rem;
     color: #5cb85c;
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
     width: max-content;
 }
 
