@@ -93,71 +93,68 @@
 
 <section id="services" class="services">
     <h2>Services</h2>
-    <p>I offer freelancing support, assignment assistance, and guidance on tools in the data domain. Let’s collaborate to achieve your goals!</p>
-    <div class="service-cards">
-        <div class="card">
+    <p>I offer freelancing support, assignment assistance, and guidance on tools in the data domain. Let’s solve your data challenges together!</p>
+    <div class="services-container">
+        <div class="service-card">
             <i class="fas fa-chart-line"></i>
             <h3>Data Analysis</h3>
-            <p>Unlock valuable insights through tailored reports, predictive analytics, and trend analysis.</p>
-            <button onclick="openModal('modalDataAnalysis')">Learn More</button>
+            <p>Transform raw data into actionable insights with tailored reports and advanced analytics.</p>
+            <button class="learn-more" onclick="openModal('dataAnalysisModal')">Learn More</button>
         </div>
-        <div class="card">
+        <div class="service-card">
             <i class="fas fa-database"></i>
-            <h3>Database Management</h3>
-            <p>Freelance support with database design, integration, and optimisation for seamless data management.</p>
-            <button onclick="openModal('modalDatabase')">Learn More</button>
+            <h3>Database Support</h3>
+            <p>Freelance assistance with database design, integration, and quality assurance.</p>
+            <button class="learn-more" onclick="openModal('databaseSupportModal')">Learn More</button>
         </div>
-        <div class="card">
+        <div class="service-card">
             <i class="fas fa-tools"></i>
-            <h3>Tool Assistance</h3>
-            <p>Expert guidance on Python, SQL, Tableau, Power BI, and other tools to enhance your projects.</p>
-            <button onclick="openModal('modalToolSupport')">Learn More</button>
+            <h3>Tool Support</h3>
+            <p>Support with Python, SQL, Tableau, Power BI, and other tools in the data domain.</p>
+            <button class="learn-more" onclick="openModal('toolSupportModal')">Learn More</button>
         </div>
     </div>
 
-    <!-- Modal: Data Analysis -->
-    <div id="modalDataAnalysis" class="modal">
+    <!-- Modals -->
+    <div id="dataAnalysisModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modalDataAnalysis')">&times;</span>
+            <span class="close" onclick="closeModal('dataAnalysisModal')">&times;</span>
             <h3>Data Analysis</h3>
             <ul>
-                <li>Predictive analytics and trend analysis to identify key business opportunities</li>
-                <li>Comprehensive data cleansing and preparation for error-free insights</li>
-                <li>Custom dashboards and visualisations to simplify complex data</li>
+                <li>Comprehensive predictive analytics and trend analysis</li>
+                <li>Data cleansing, transformation, and preparation</li>
+                <li>Building advanced dashboards with Tableau, Power BI, and Excel</li>
             </ul>
-            <p>Transform raw data into actionable business strategies with expert analysis.</p>
+            <p>Let me help you turn your data into actionable strategies and insights!</p>
         </div>
     </div>
 
-    <!-- Modal: Database Management -->
-    <div id="modalDatabase" class="modal">
+    <div id="databaseSupportModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modalDatabase')">&times;</span>
-            <h3>Database Management</h3>
+            <span class="close" onclick="closeModal('databaseSupportModal')">&times;</span>
+            <h3>Database Support</h3>
             <ul>
-                <li>Database design and optimisation for efficient workflows</li>
-                <li>Data migration and transformation tailored to your needs</li>
-                <li>Ensuring data quality and consistency with industry best practices</li>
+                <li>Database design, migration, and integration</li>
+                <li>ETL processes and data transformation</li>
+                <li>Maintaining data accuracy and ensuring quality assurance</li>
             </ul>
-            <p>Let’s optimise your data systems for seamless performance and accuracy.</p>
+            <p>Optimize your database systems for seamless performance.</p>
         </div>
     </div>
 
-    <!-- Modal: Tool Assistance -->
-    <div id="modalToolSupport" class="modal">
+    <div id="toolSupportModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modalToolSupport')">&times;</span>
-            <h3>Tool Assistance</h3>
+            <span class="close" onclick="closeModal('toolSupportModal')">&times;</span>
+            <h3>Tool Support</h3>
             <ul>
-                <li>Support for Python libraries like Pandas, NumPy, and Matplotlib</li>
-                <li>SQL database queries and efficient data handling</li>
-                <li>Visualisation tools such as Tableau and Power BI</li>
+                <li>Python libraries like Pandas, NumPy, and Matplotlib</li>
+                <li>SQL queries and database management</li>
+                <li>Data visualizations using Tableau and Power BI</li>
             </ul>
-            <p>Receive expert assistance for your projects and assignments in the data domain.</p>
+            <p>I provide expert guidance to help you master tools and tackle projects effectively.</p>
         </div>
     </div>
 </section>
-
 
 
     <div id="contactModal" class="modal">
