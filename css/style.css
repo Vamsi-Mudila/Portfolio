@@ -204,11 +204,12 @@ p {
 .roadmap {
     position: relative;
     max-width: 1100px;
-    margin: 60px auto;
+    margin: 80px auto;
     padding: 50px 20px;
     text-align: center;
 }
 
+/* Roadmap Line */
 .roadmap::before {
     content: "";
     position: absolute;
@@ -220,6 +221,7 @@ p {
     z-index: -1;
 }
 
+/* Roadmap Container */
 .roadmap-container {
     display: flex;
     justify-content: space-between;
@@ -232,7 +234,6 @@ p {
     text-align: center;
     position: relative;
     width: 200px;
-    padding-top: 30px; /* Space for the title above */
 }
 
 /* Timeline Dots */
@@ -250,24 +251,26 @@ p {
 }
 
 /* Title and University/Company Styling Above the Line */
-.roadmap-item h4, .roadmap-item p {
+.roadmap-item h4 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
     position: absolute;
-    top: -40px;
+    top: -60px;
     left: 50%;
     transform: translateX(-50%);
     width: max-content;
-    text-align: center;
 }
 
 .roadmap-item p {
     font-style: italic;
     color: #777;
     font-size: 1rem;
-    font-weight: normal;
-    top: -20px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
 }
 
 /* Dates Positioned Below the Line */
@@ -276,8 +279,36 @@ p {
     font-size: 1rem;
     color: #5cb85c;
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: max-content;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .roadmap::before {
+        top: 25px;
+    }
+
+    .roadmap-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .roadmap-item::before {
+        top: 25px;
+    }
+
+    .roadmap-item h4, .roadmap-item p {
+        position: relative;
+        top: unset;
+        margin-bottom: 10px;
+    }
+
+    .roadmap-item .year {
+        position: relative;
+        top: unset;
+        margin-top: 10px;
+    }
 }
