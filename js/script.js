@@ -71,7 +71,6 @@ document.querySelectorAll('.filter-btn').forEach(button => {
     });
 });
 
-// Modal Open/Close Functions
 // Open Modal
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
@@ -87,6 +86,20 @@ function closeModal(modalId) {
         modal.style.display = "none";
     }
 }
+
+// Filter Portfolio Items
+document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
 
 // Close Modal on Outside Click
 window.onclick = function (event) {
