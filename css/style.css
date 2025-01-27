@@ -233,7 +233,7 @@ p {
     text-align: center;
     position: relative;
     width: 18%;
-    font-size: 0.8rem; /* Reduced size */
+    font-size: 0.9rem; /* Reduced size */
 }
 
 /* Timeline Dots */
@@ -262,7 +262,7 @@ p {
     font-style: italic;
     color: #777;
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Dates Positioned Below the Line */
