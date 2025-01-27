@@ -442,70 +442,78 @@ p {
 }
 
 
-#portfolio {
-    padding: 50px 0;
+/* Portfolio Section Styling */
+.portfolio {
     text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
 }
 
-.portfolio-filter {
-    margin-bottom: 20px;
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-filters {
+    margin: 20px 0;
 }
 
 .filter-btn {
-    margin: 0 5px;
     padding: 10px 20px;
-    background-color: #5cb85c;
-    color: #fff;
-    border: none;
+    margin: 5px;
+    border: 1px solid #5cb85c;
+    background: #fff;
+    color: #5cb85c;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.filter-btn:hover {
+    background: #5cb85c;
+    color: #fff;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .portfolio-item {
-    position: relative;
+    width: 300px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
-.portfolio-overlay {
-    position: absolute;
+.portfolio-item h3 {
+    padding: 10px;
+    background: #5cb85c;
+    color: #fff;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    color: #fff;
-    transition: opacity 0.3s ease;
-}
-
-.portfolio-item:hover .portfolio-overlay {
-    opacity: 1;
-}
-
-/* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
     z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    overflow: auto;
 }
 
 .modal-content {
@@ -513,14 +521,26 @@ p {
     margin: 10% auto;
     padding: 20px;
     width: 50%;
-    text-align: left;
-    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .modal-content .close {
     position: absolute;
     top: 10px;
-    right: 15px;
-    font-size: 24px;
+    right: 20px;
+    font-size: 1.5rem;
     cursor: pointer;
+}
+
+.modal-content a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #5cb85c;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
 }
