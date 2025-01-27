@@ -55,11 +55,17 @@ particlesJS("particles-js", {
 
 // Modal Open/Close Functions
 function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    }
 }
 
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    }
 }
 
 // Close Modal on Outside Click
@@ -71,3 +77,13 @@ window.onclick = function (event) {
         }
     });
 };
+
+// Ensure all modal close buttons are functional
+document.querySelectorAll('.modal .close').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const modal = event.target.closest('.modal');
+        if (modal) {
+            modal.style.display = "none";
+        }
+    });
+});
