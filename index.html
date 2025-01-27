@@ -92,73 +92,75 @@
     </section>
 
 <section id="services" class="services">
-    <h2>Services</h2>
-    <p class="services-description">
-        Let me help you make better use of your data. I offer freelancing, assignment assistance, and guidance on tools in the data domain.
-    </p>
-    <div class="services-container">
-        <div class="service-item" id="data-analysis">
-            <div class="icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Data Analysis</h3>
-            <p>Transform raw data into actionable insights with tailored reports and advanced analytics.</p>
-            <button class="read-more-btn" onclick="openModal('modal-analysis')">Learn More</button>
-        </div>
-        <div class="service-item" id="database-management">
-            <div class="icon"><i class="fas fa-database"></i></div>
-            <h3>Database Management</h3>
-            <p>Freelance support for database creation, integration, and quality assurance.</p>
-            <button class="read-more-btn" onclick="openModal('modal-database')">Learn More</button>
-        </div>
-        <div class="service-item" id="tool-assistance">
-            <div class="icon"><i class="fas fa-tools"></i></div>
-            <h3>Tool Assistance</h3>
-            <p>Guidance and training for Python, SQL, Tableau, Power BI, and more.</p>
-            <button class="read-more-btn" onclick="openModal('modal-tools')">Learn More</button>
+    <div class="container">
+        <h2>Services</h2>
+        <p>
+            Let me help you make better use of your data. I offer freelancing, assignment assistance, and guidance on tools in the data domain.
+        </p>
+        <div class="service-cards">
+            <div class="card" onclick="openModal('dataAnalysisModal')">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+                <p>Transform raw data into actionable insights with tailored reports and advanced analytics.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card" onclick="openModal('databaseManagementModal')">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Freelance support for database creation, integration, and quality assurance.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card" onclick="openModal('toolAssistanceModal')">
+                <i class="fas fa-tools"></i>
+                <h3>Tool Assistance</h3>
+                <p>Guidance on tools like Python, SQL, Power BI, Tableau, and more for assignments or projects.</p>
+                <button>Learn More</button>
+            </div>
         </div>
     </div>
 
-    <!-- Modal for Data Analysis -->
-    <div class="modal" id="modal-analysis">
+    <!-- Data Analysis Modal -->
+    <div id="dataAnalysisModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-analysis')">&times;</span>
+            <span class="close" onclick="closeModal('dataAnalysisModal')">&times;</span>
             <h3>Data Analysis</h3>
-            <p>I can help you with:</p>
             <ul>
                 <li>Predictive analytics and trend analysis</li>
-                <li>Data cleansing and preparation</li>
-                <li>Building customised dashboards and visualisations</li>
+                <li>Data cleansing, preparation, and transformation</li>
+                <li>Customised dashboards and visualisations in Power BI and Tableau</li>
+                <li>Generating actionable insights for improving decision-making efficiency</li>
             </ul>
-            <p>Let's turn your data into powerful business insights!</p>
+            <p>Let's turn your data into powerful business insights.</p>
         </div>
     </div>
 
-    <!-- Modal for Database Management -->
-    <div class="modal" id="modal-database">
+    <!-- Database Management Modal -->
+    <div id="databaseManagementModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-database')">&times;</span>
+            <span class="close" onclick="closeModal('databaseManagementModal')">&times;</span>
             <h3>Database Management</h3>
-            <p>I provide freelance support for:</p>
             <ul>
-                <li>Database design and integration</li>
-                <li>Data migration and transformation</li>
-                <li>Ensuring data quality and consistency</li>
+                <li>Designing and integrating SQL databases</li>
+                <li>Data migration and transformation for ETL processes</li>
+                <li>Ensuring data quality, consistency, and accuracy</li>
+                <li>Optimising database systems for seamless performance</li>
             </ul>
-            <p>Optimise your database systems for seamless performance.</p>
+            <p>Efficient database management for handling your data effectively.</p>
         </div>
     </div>
 
-    <!-- Modal for Tool Assistance -->
-    <div class="modal" id="modal-tools">
+    <!-- Tool Assistance Modal -->
+    <div id="toolAssistanceModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-tools')">&times;</span>
+            <span class="close" onclick="closeModal('toolAssistanceModal')">&times;</span>
             <h3>Tool Assistance</h3>
-            <p>Get personalised training in:</p>
             <ul>
-                <li>Python libraries like Pandas, NumPy, and Matplotlib</li>
-                <li>SQL queries and database handling</li>
-                <li>Visualisation tools like Tableau and Power BI</li>
+                <li>Guidance on Python libraries like Pandas, NumPy, and Matplotlib</li>
+                <li>Assistance with SQL queries for database handling</li>
+                <li>Support in creating visualisations in Tableau and Power BI</li>
+                <li>Help with integrating these tools into your assignments or freelance projects</li>
             </ul>
-            <p>Master the tools that empower your data-driven projects.</p>
+            <p>Master the tools needed for your data-driven projects.</p>
         </div>
     </div>
 </section>
