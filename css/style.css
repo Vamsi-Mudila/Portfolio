@@ -204,8 +204,8 @@ p {
 .roadmap {
     position: relative;
     max-width: 1100px;
-    margin: 80px auto;
-    padding: 50px 20px;
+    margin: 100px auto; /* Increased top margin to add space above the roadmap */
+    padding: 60px 20px;  /* Increased padding for better spacing */
     text-align: center;
 }
 
@@ -213,12 +213,11 @@ p {
 .roadmap::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 55%; /* Adjusted position to lower the line */
     left: 5%;
     width: 90%;
     height: 3px;
     background: #5cb85c;
-    z-index: -1;
 }
 
 /* Roadmap Container */
@@ -234,7 +233,8 @@ p {
     text-align: center;
     position: relative;
     width: 18%;
-    font-size: 0.85rem; /* Reduced size */
+    font-size: 0.9rem;
+    padding-top: 30px; /* Added space above nodes */
 }
 
 /* Timeline Dots */
@@ -245,15 +245,15 @@ p {
     background: #5cb85c;
     border-radius: 50%;
     position: absolute;
-    top: -5px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     border: 2px solid #fff;
 }
 
 /* Title and University/Company Styling Above the Line */
 .roadmap-item h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
@@ -262,7 +262,7 @@ p {
 .roadmap-item p {
     font-style: italic;
     color: #777;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 10px;
 }
 
@@ -271,10 +271,7 @@ p {
     font-weight: bold;
     font-size: 0.9rem;
     color: #5cb85c;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 30px; /* Adjusted spacing below the line */
 }
 
 /* Responsive Styling for Smaller Screens */
