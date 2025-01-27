@@ -234,6 +234,7 @@ p {
     position: relative;
     width: 18%;
     font-size: 0.9rem; /* Reduced size */
+    padding-top: 30px; /* Ensures spacing for uniform alignment */
 }
 
 /* Timeline Dots */
@@ -250,19 +251,24 @@ p {
     border: 2px solid #fff;
 }
 
-/* Title and University/Company Styling Above the Line */
+/* Title Styling Above the Line */
 .roadmap-item h4 {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -25px; /* Moves title slightly above */
 }
 
+/* University/Company Styling */
 .roadmap-item p {
     font-style: italic;
     color: #777;
     font-size: 0.9rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -15px; /* Aligns institutions uniformly */
 }
 
 /* Dates Positioned Below the Line */
@@ -270,7 +276,19 @@ p {
     font-weight: bold;
     font-size: 0.9rem;
     color: #5cb85c;
-    margin-top: 25px;
+    position: relative;
+    top: 15px; /* Moves dates down to align consistently */
+}
+
+/* Ensuring Roadmap Line Stays in Center */
+.roadmap::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 3px;
+    background: #5cb85c;
 }
 
 /* Responsive Styling for Smaller Screens */
@@ -295,7 +313,10 @@ p {
         top: 20px;
     }
 
+    .roadmap-item h4,
+    .roadmap-item p,
     .roadmap-item .year {
-        margin-top: 10px;
+        top: 0;
     }
 }
+
