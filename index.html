@@ -157,6 +157,65 @@
     </div>
 </section>
 
+<section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <p>A glimpse of the projects I've been working on</p>
+    <div class="portfolio-filters">
+        <button class="filter-btn" data-filter="all">Show All</button>
+        <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+        <button class="filter-btn" data-filter="data-visualisation">Data Visualisation</button>
+    </div>
+    <div class="portfolio-grid">
+        <!-- Example Project -->
+        <div class="portfolio-item data-analysis">
+            <img src="assets/project1.png" alt="Project 1">
+            <div class="portfolio-overlay" onclick="openModal('project1Modal')">
+                <h3>Data Analysis Project</h3>
+                <p>Predictive analytics and trend analysis</p>
+            </div>
+        </div>
+        <div class="portfolio-item dashboard">
+            <img src="assets/project2.png" alt="Project 2">
+            <div class="portfolio-overlay" onclick="openModal('project2Modal')">
+                <h3>Interactive Dashboard</h3>
+                <p>A live dashboard with dynamic visualisation</p>
+            </div>
+        </div>
+        <div class="portfolio-item data-visualisation">
+            <img src="assets/project3.png" alt="Project 3">
+            <div class="portfolio-overlay" onclick="openModal('project3Modal')">
+                <h3>Data Visualisation</h3>
+                <p>Insights through compelling visual storytelling</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for Projects -->
+    <div id="project1Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1Modal')">&times;</span>
+            <h3>Data Analysis Project</h3>
+            <p>Details about your data analysis project go here...</p>
+        </div>
+    </div>
+    <div id="project2Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2Modal')">&times;</span>
+            <h3>Interactive Dashboard</h3>
+            <p>Details about your dashboard project go here...</p>
+        </div>
+    </div>
+    <div id="project3Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3Modal')">&times;</span>
+            <h3>Data Visualisation</h3>
+            <p>Details about your data visualisation project go here...</p>
+        </div>
+    </div>
+</section>
+
+
 
     <div id="contactModal" class="modal">
         <div class="modal-content">
