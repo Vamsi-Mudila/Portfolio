@@ -321,7 +321,7 @@ p {
 }
 
 .services h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #333;
     margin-bottom: 10px;
 }
@@ -375,9 +375,71 @@ p {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-/* Responsive Styling for Services */
+.read-more-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.read-more-btn:hover {
+    background: #4cae4c;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-content ul {
+    text-align: left;
+    margin: 0 auto 20px auto;
+    max-width: 500px;
+    color: #555;
+}
+
+.modal-content ul li {
+    margin-bottom: 10px;
+}
+
+.modal-content .close {
+    font-size: 1.5rem;
+    color: #aaa;
+    float: right;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
 @media (max-width: 768px) {
     .services-container {
         flex-direction: column;
@@ -387,5 +449,9 @@ p {
     .service-item {
         max-width: 90%;
         margin: 0 auto;
+    }
+
+    .modal-content {
+        width: 90%;
     }
 }
