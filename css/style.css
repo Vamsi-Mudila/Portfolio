@@ -325,6 +325,7 @@ p {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -334,6 +335,11 @@ p {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card i {
@@ -354,6 +360,7 @@ p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .card button:hover {
@@ -374,7 +381,7 @@ p {
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 20px;
     width: 40%;
     border-radius: 10px;
@@ -391,10 +398,5 @@ p {
 }
 
 .modal-content .close:hover {
-    color: #333;
-}
-
-.modal-content h3 {
-    margin-bottom: 15px;
     color: #333;
 }
