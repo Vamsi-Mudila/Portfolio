@@ -232,6 +232,7 @@ p {
     text-align: center;
     position: relative;
     width: 200px;
+    padding-top: 30px; /* Space for the title above */
 }
 
 /* Timeline Dots */
@@ -242,24 +243,31 @@ p {
     background: #5cb85c;
     border-radius: 50%;
     position: absolute;
-    top: -10px;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     border: 3px solid #fff;
 }
 
-/* Title Styling Above the Line */
-.roadmap-item h4 {
+/* Title and University/Company Styling Above the Line */
+.roadmap-item h4, .roadmap-item p {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    text-align: center;
 }
 
-/* Subtext Styling Above the Line */
 .roadmap-item p {
     font-style: italic;
     color: #777;
     font-size: 1rem;
+    font-weight: normal;
+    top: -20px;
 }
 
 /* Dates Positioned Below the Line */
@@ -267,5 +275,9 @@ p {
     font-weight: bold;
     font-size: 1rem;
     color: #5cb85c;
-    margin-top: 30px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
 }
