@@ -69,27 +69,27 @@ body {
 }
 
 .content h1 {
-    font-size: 4.5rem; 
+    font-size: 4rem; 
     font-weight: bold;
 }
 
 .logo-img {
-    height: 120px; 
+    height: 100px; 
     width: auto;
     margin: 0 20px; 
 }
 
 p {
-    font-size: 1.2rem;  
+    font-size: 1rem;  
     max-width: 700px;  
-    line-height: 1.8;
+    line-height: 1.6;
     margin: 20px auto;
 }
 
 /* Social Links Styling */
 .social-links a {
     color: #333;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 15px;
     transition: color 0.3s;
 }
@@ -104,8 +104,8 @@ p {
 }
 
 .buttons button, .buttons .cv-btn {
-    padding: 15px 30px;
-    font-size: 1.1rem;
+    padding: 12px 25px;
+    font-size: 1rem;
     border: 2px solid #5cb85c;
     background: none;
     color: #5cb85c;
@@ -162,7 +162,7 @@ p {
 
 /* Intro Section Styling */
 .intro {
-    padding: 80px 0;
+    padding: 60px 0;
     text-align: center;
     background: #f8f9fa;
 }
@@ -171,32 +171,32 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .profile-img {
-    width: 220px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .intro-text {
-    max-width: 600px;
+    max-width: 550px;
     text-align: left;
 }
 
 .intro-text h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #333;
 }
 
 .intro-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
     color: #555;
 }
 
@@ -209,22 +209,21 @@ p {
     text-align: center;
 }
 
-/* Roadmap Line */
+/* Single Straight Roadmap Line */
 .roadmap::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
+    left: 5%;
+    width: 90%;
     height: 3px;
     background: #5cb85c;
-    z-index: -1;
 }
 
 /* Roadmap Container */
 .roadmap-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -233,26 +232,27 @@ p {
 .roadmap-item {
     text-align: center;
     position: relative;
-    width: 20%;
+    width: 18%;
+    font-size: 0.9rem; /* Reduced size */
 }
 
 /* Timeline Dots */
 .roadmap-item::before {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     background: #5cb85c;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    border: 3px solid #fff;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
 }
 
 /* Title and University/Company Styling Above the Line */
 .roadmap-item h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
@@ -261,22 +261,24 @@ p {
 .roadmap-item p {
     font-style: italic;
     color: #777;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 10px;
 }
 
 /* Dates Positioned Below the Line */
 .roadmap-item .year {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #5cb85c;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 /* Responsive Styling for Smaller Screens */
 @media (max-width: 768px) {
     .roadmap::before {
         top: 20px;
+        left: 10%;
+        width: 80%;
     }
 
     .roadmap-container {
