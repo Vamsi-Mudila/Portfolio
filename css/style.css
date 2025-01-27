@@ -256,7 +256,7 @@ p {
     margin-bottom: 5px;
 }
 
-/* Subtext (University/Company) Styling */
+/* Subtext Styling */
 .roadmap-item p {
     font-style: italic;
     color: #777;
@@ -264,7 +264,7 @@ p {
     margin-bottom: 5px;
 }
 
-/* Dates Positioned Below the Line */
+/* Dates Below the Line */
 .roadmap-item .year {
     font-weight: bold;
     font-size: 1rem;
@@ -288,7 +288,6 @@ p {
     .roadmap-item {
         text-align: center;
         width: 100%;
-        padding-left: 0;
         margin-bottom: 40px;
     }
 
@@ -301,4 +300,3 @@ p {
         margin-top: 15px;
     }
 }
-
