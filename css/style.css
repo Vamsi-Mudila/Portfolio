@@ -234,6 +234,7 @@ p {
     position: relative;
     width: 18%;
     font-size: 0.9rem; /* Reduced size */
+     padding-top: 20px;
 }
 
 /* Timeline Dots */
