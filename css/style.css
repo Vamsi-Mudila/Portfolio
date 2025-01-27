@@ -490,9 +490,12 @@ p {
 }
 
 .portfolio-item img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ensures images fill the container width */
+    height: 250px; /* Increases the height for larger images */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 5px; /* Keeps the edges smooth */
 }
+
 
 .portfolio-item h3 {
     padding: 10px;
