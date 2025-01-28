@@ -480,32 +480,36 @@ p {
     gap: 20px;
 }
 
+/* Portfolio Section Styling */
 .portfolio-item {
-    width: 300px;
-    cursor: pointer;
-    border: 1px solid #ddd;
+    width: calc(33.333% - 20px); /* Matches the width of the service cards */
+    background: white;
+    padding: 20px;
     border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-align: center;
+    min-width: 300px; /* Matches the service card minimum width */
+    max-width: 350px; /* Matches the service card maximum width */
 }
 
 .portfolio-item img {
-    width: 100%; /* Ensures images fill the container width */
-    height: 250px; /* Increases the height for larger images */
-    object-fit: cover; /* Ensures images maintain aspect ratio */
-    border-radius: 5px; /* Keeps the edges smooth */
+    width: 100%; /* Ensures the image fills the container */
+    height: 200px; /* Matches the height of the service card image area */
+    object-fit: cover; /* Ensures the image scales properly */
+    border-radius: 10px; /* Matches the service card image border radius */
 }
 
-
 .portfolio-item h3 {
-    padding: 10px;
-    background: #5cb85c;
-    color: #fff;
+    margin-top: 10px;
+    font-size: 1.2rem; /* Matches the service card text styling */
+    color: #333;
 }
 
 .portfolio-item:hover {
     transform: scale(1.05);
 }
+
 
 /* Modal Styling */
 .modal {
