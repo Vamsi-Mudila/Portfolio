@@ -91,19 +91,19 @@ function openCertModal(certId, certTitle) {
         cert7: "assets/certs/PFE.pdf"
     };
 
-    certFrame.src = certMap[certId];   // Set correct PDF file
-    certTitleElement.textContent = certTitle; // Set correct title
-    certModal.style.display = "block"; // Show modal
+    certFrame.src = certMap[certId];   // Load the correct certificate
+    certTitleElement.textContent = certTitle; // Display the certificate title
+    certModal.style.display = "flex"; // Show modal
 }
 
 // Close Certification Modal
 function closeCertModal() {
     document.getElementById("certModal").style.display = "none";
-    document.getElementById("certFrame").src = ""; // Reset PDF to prevent load issues
+    document.getElementById("certFrame").src = ""; // Reset PDF
 }
 
-// Ensures clicking outside the modal closes it
-window.onclick = function (event) {
+// Close Modal on Clicking Outside
+window.onclick = function(event) {
     const certModal = document.getElementById("certModal");
     if (event.target === certModal) {
         closeCertModal();
