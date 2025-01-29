@@ -170,20 +170,27 @@ p {
 /* Flexbox Layout for Proper Alignment */
 .intro-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Distribute content evenly */
     align-items: center;
-    gap: 50px;
-    max-width: 1100px;
+    gap: 60px; /* More spacing between text and image */
+    max-width: 90vw; /* Increase the width to occupy more space */
     margin: 0 auto;
 }
 
-/* Profile Image Styling */
+/* Increase width of the text */
+.intro-text {
+    flex: 1; /* Allows text to occupy more space */
+    max-width: 65%; /* Previously it was too narrow */
+}
+
+/* Enlarge the profile image */
 .profile-img {
-    width: 220px;
+    width: 250px; /* Increase the size */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Adjust Text Block */
 .intro-text {
