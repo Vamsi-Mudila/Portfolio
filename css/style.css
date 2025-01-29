@@ -440,6 +440,14 @@ p {
     margin-bottom: 10px;
 }
 
+/* Certification Category Headers */
+.cert-category {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #5cb85c;
+}
+
 .certs-container {
     display: flex;
     flex-wrap: wrap;
@@ -496,8 +504,8 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 80%;  /* Adjusted size */
-    max-height: 90%; /* Adjusted size */
+    max-width: 80%;
+    max-height: 90%;
     position: relative;
 }
 
