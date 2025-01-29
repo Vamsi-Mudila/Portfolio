@@ -87,6 +87,27 @@ document.querySelectorAll('.filter-btn').forEach(button => {
     });
 });
 
+// Open Certification Modal
+function openCertModal(certId) {
+    document.getElementById(certId).style.display = "block";
+}
+
+// Close Certification Modal
+function closeModal(certId) {
+    document.getElementById(certId).style.display = "none";
+}
+
+// Close Modal on Outside Click
+window.onclick = function (event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+};
+
+
 // Open Modal
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
