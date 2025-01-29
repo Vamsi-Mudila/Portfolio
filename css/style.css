@@ -454,17 +454,18 @@ p {
 
 .modal-content {
     background: #fff;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 20px;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .modal-content iframe {
     width: 100%;
-    height: 400px;
+    height: 500px;
     border: none;
 }
 
@@ -475,18 +476,6 @@ p {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
-.modal-content a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #5cb85c;
-}
-
-.modal-content a:hover {
-    text-decoration: underline;
-}
-
 
 
 /* Services Section */
