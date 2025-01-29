@@ -680,37 +680,45 @@ p {
 }
 
 
-/* Portfolio Section Styling */
+/* Portfolio Section */
 .portfolio {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background: #f8f9fa;
 }
 
 .portfolio h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
+.portfolio p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Filter Buttons */
 .portfolio-filters {
     margin: 20px 0;
 }
 
 .filter-btn {
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 8px 16px;
     border: 1px solid #5cb85c;
-    background: #fff;
+    background: white;
     color: #5cb85c;
+    font-size: 1rem;
     cursor: pointer;
+    margin: 5px;
     transition: all 0.3s;
 }
 
 .filter-btn:hover {
     background: #5cb85c;
-    color: #fff;
+    color: white;
 }
 
+/* Portfolio Items */
 .portfolio-container {
     display: flex;
     justify-content: center;
@@ -718,36 +726,36 @@ p {
     gap: 20px;
 }
 
-/* Portfolio Section Styling */
 .portfolio-item {
-    width: calc(33.333% - 20px); /* Matches the width of the service cards */
+    width: 320px;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    text-align: center;
-    min-width: 300px; /* Matches the service card minimum width */
-    max-width: 350px; /* Matches the service card maximum width */
+    text-align: left;
+    min-width: 300px;
+    max-width: 350px;
 }
 
 .portfolio-item img {
-    width: 100%; /* Ensures the image fills the container */
-    height: 200px; /* Matches the height of the service card image area */
-    object-fit: cover; /* Ensures the image scales properly */
-    border-radius: 10px; /* Matches the service card image border radius */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .portfolio-item h3 {
     margin-top: 10px;
-    font-size: 1.2rem; /* Matches the service card text styling */
+    font-size: 1.2rem;
     color: #333;
 }
 
-.portfolio-item:hover {
-    transform: scale(1.05);
+.portfolio-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
 }
-
 
 /* Modal Styling */
 .modal {
@@ -757,35 +765,32 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
 }
 
 .modal-content {
-    background: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    width: 50%;
+    background: white;
+    padding: 30px;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: left;
 }
 
-.modal-content .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 1.5rem;
-    cursor: pointer;
+.modal-content h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 .modal-content a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
     color: #5cb85c;
-}
-
-.modal-content a:hover {
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
 }
