@@ -62,48 +62,270 @@
                 </p>
             </div>
         </div>
-    </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <p>A showcase of my technical and analytical expertise.</p>
-        <div class="skills-container">
-            <div class="skill-card">Python (Pandas, NumPy, scikit-learn, Matplotlib)</div>
-            <div class="skill-card">SQL (Complex Queries, Joins, Window Functions)</div>
-            <div class="skill-card">R</div>
-            <div class="skill-card">Power BI</div>
-            <div class="skill-card">Tableau</div>
-            <div class="skill-card">Advanced Microsoft Excel (Pivot Tables, VLOOKUPs, Macros)</div>
-            <div class="skill-card">Jupyter Notebook</div>
-            <div class="skill-card">Git/GitHub</div>
-            <div class="skill-card">Qlik Sense</div>
-            <div class="skill-card">Database Management</div>
-            <div class="skill-card">Predictive Analytics</div>
-            <div class="skill-card">NLP & Time Series Analysis</div>
+        <div class="roadmap">
+            <div class="roadmap-container">
+                <div class="roadmap-item">
+                    <h4>Bachelor of Technology</h4>
+                    <p>GITAM University, India</p>
+                    <span class="year">August 2019</span>
+                </div>
+                <div class="roadmap-item">
+                    <h4>Post Graduate Diploma in Embedded Systems Design</h4>
+                    <p>CDAC, India</p>
+                    <span class="year">January 2021</span>
+                </div>
+                <div class="roadmap-item">
+                    <h4>Analyst</h4>
+                    <p>Capgemini, India</p>
+                    <span class="year">March 2021 – July 2021</span>
+                </div>
+                <div class="roadmap-item">
+                    <h4>Data Analyst</h4>
+                    <p>Asquare, India</p>
+                    <span class="year">August 2021 – August 2022</span>
+                </div>
+                <div class="roadmap-item">
+                    <h4>Master of Science in Data Science & AI</h4>
+                    <p>University of Liverpool, United Kingdom</p>
+                    <span class="year">September 2023</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CERTIFICATIONS SECTION -->
-    <section id="certifications" class="certifications">
-        <h2>Certifications</h2>
-        <div class="certs-container">
-            <div class="cert-item"><iframe src="assets/certs/PFE.pdf"></iframe><h3>Python for Everybody</h3></div>
-            <div class="cert-item"><iframe src="assets/certs/WWE.pdf"></iframe><h3>Work Smarter with Excel</h3></div>
-            <div class="cert-item"><iframe src="assets/certs/AMD.pdf"></iframe><h3>Advanced Microsoft Data Analytics</h3></div>
-            <div class="cert-item"><iframe src="assets/certs/DWG.pdf"></iframe><h3>Data Wrangling with Python</h3></div>
-        </div>
-    </section>
+<!-- SKILLS SECTION -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p>A showcase of my technical and analytical expertise.</p>
 
-    <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-        <p>Some of the projects I have worked on.</p>
-        <div class="portfolio-container">
-            <div class="portfolio-item"><img src="assets/project-images/gender-diversity.jpeg" alt="Gender Diversity"><h3>Gender Diversity in CS</h3></div>
-            <div class="portfolio-item"><img src="assets/project-images/natural-disasters.jpeg" alt="Natural Disasters"><h3>Natural Disasters Analysis</h3></div>
-            <div class="portfolio-item"><img src="assets/project-images/room-utilization.png" alt="Room Utilization"><h3>Room Utilization</h3></div>
+    <!-- Skill Filter Buttons -->
+    <div class="skill-filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="visualization">Visualization</button>
+        <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="business-intelligence">Business Intelligence</button>
+        <button class="filter-btn" data-filter="soft-skills">Soft Skills</button>
+    </div>
+
+    <!-- Skill Cards -->
+    <div class="skills-container">
+        <!-- Programming -->
+        <div class="skill-card programming">Python <span class="skill-tag">Pandas, NumPy, scikit-learn</span></div>
+        <div class="skill-card programming">SQL <span class="skill-tag">Complex Queries, Joins, Window Functions</span></div>
+        <div class="skill-card programming">R</div>
+        <div class="skill-card programming">HTML</div>
+        <div class="skill-card programming">CSS</div>
+        <div class="skill-card programming">JavaScript</div>
+
+        <!-- Tools -->
+        <div class="skill-card tools">Git/GitHub</div>
+        <div class="skill-card tools">Jupyter Notebook</div>
+        <div class="skill-card tools">Visual Studio Code</div>
+        <div class="skill-card tools">Qlik Sense</div>
+
+        <!-- Visualization -->
+        <div class="skill-card visualization">Power BI</div>
+        <div class="skill-card visualization">Tableau</div>
+        <div class="skill-card visualization">Excel <span class="skill-tag">Pivot Tables, VLOOKUPs, Macros</span></div>
+
+        <!-- Data Analysis -->
+        <div class="skill-card data-analysis">A/B Testing</div>
+        <div class="skill-card data-analysis">Data Cleaning & Transformation</div>
+        <div class="skill-card data-analysis">Data Preprocessing</div>
+        <div class="skill-card data-analysis">Large Language Models (LLMs)</div>
+        <div class="skill-card data-analysis">Natural Language Processing (NLP)</div>
+        <div class="skill-card data-analysis">Time Series Analysis</div>
+
+        <!-- Database -->
+        <div class="skill-card database">SQL Databases</div>
+        <div class="skill-card database">Data Warehousing Concepts</div>
+        <div class="skill-card database">ETL Processes</div>
+        <div class="skill-card database">Data Quality Assurance</div>
+
+        <!-- Business Intelligence -->
+        <div class="skill-card business-intelligence">KPI Tracking</div>
+        <div class="skill-card business-intelligence">Revenue & Sales Analysis</div>
+        <div class="skill-card business-intelligence">Consumer Insights</div>
+        <div class="skill-card business-intelligence">Marketing & Web Analytics</div>
+        <div class="skill-card business-intelligence">Statistical Analysis</div>
+        <div class="skill-card business-intelligence">Predictive Analytics <span class="skill-tag">Linear Regression, Forecasting</span></div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card soft-skills">Analytical Problem Solving</div>
+        <div class="skill-card soft-skills">Strong Communication Skills</div>
+        <div class="skill-card soft-skills">Stakeholder Collaboration</div>
+        <div class="skill-card soft-skills">Adaptability</div>
+        <div class="skill-card soft-skills">Proactive Approach</div>
+        <div class="skill-card soft-skills">Teamwork</div>
+    </div>
+</section>
+
+
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <p>Here are some of the certifications I've earned in various areas of Data Science, Analytics, and Programming.</p>
+
+    <div class="certs-container">
+        <div class="cert-item" onclick="openCertModal('cert1')">
+            <iframe src="assets/certs/PFE.pdf"></iframe>
+            <h3>Programming for Everybody (Python)</h3>
         </div>
-    </section>
+        <div class="cert-item" onclick="openCertModal('cert2')">
+            <iframe src="assets/certs/WWE.pdf"></iframe>
+            <h3>Work Smarter with Microsoft Excel</h3>
+        </div>
+        <div class="cert-item" onclick="openCertModal('cert3')">
+            <iframe src="assets/certs/AMD.pdf"></iframe>
+            <h3>Advanced Microsoft Data Analytics</h3>
+        </div>
+        <div class="cert-item" onclick="openCertModal('cert4')">
+            <iframe src="assets/certs/DWG.pdf"></iframe>
+            <h3>Data Wrangling with Python</h3>
+        </div>
+        <div class="cert-item" onclick="openCertModal('cert5')">
+            <iframe src="assets/certs/FDE.pdf"></iframe>
+            <h3>Foundations of Data Engineering</h3>
+        </div>
+        <div class="cert-item" onclick="openCertModal('cert6')">
+            <iframe src="assets/certs/PDE.pdf"></iframe>
+            <h3>Practical Data Ethics</h3>
+        </div>
+        <div class="cert-item" onclick="openCertModal('cert7')">
+            <iframe src="assets/certs/PDS.pdf"></iframe>
+            <h3>Python for Data Science</h3>
+        </div>
+    </div>
+</section>
+
+
+<section id="services" class="services">
+    <h2>Services</h2>
+    <p>I offer freelancing support, assignment assistance, and guidance on tools in the data domain. Let’s solve your data challenges together!</p>
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Analysis</h3>
+            <p>Transform raw data into actionable insights with tailored reports and advanced analytics.</p>
+            <button class="learn-more" onclick="openModal('dataAnalysisModal')">Learn More</button>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-database"></i>
+            <h3>Database Support</h3>
+            <p>Freelance assistance with database design, integration, and quality assurance.</p>
+            <button class="learn-more" onclick="openModal('databaseSupportModal')">Learn More</button>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-tools"></i>
+            <h3>Tool Support</h3>
+            <p>Support with Python, SQL, Tableau, Power BI, and other tools in the data domain.</p>
+            <button class="learn-more" onclick="openModal('toolSupportModal')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="dataAnalysisModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('dataAnalysisModal')">&times;</span>
+            <h3>Data Analysis</h3>
+            <ul>
+                <li>Comprehensive predictive analytics and trend analysis</li>
+                <li>Data cleansing, transformation, and preparation</li>
+                <li>Building advanced dashboards with Tableau, Power BI, and Excel</li>
+            </ul>
+            <p>Let me help you turn your data into actionable strategies and insights!</p>
+        </div>
+    </div>
+
+
+    <div id="databaseSupportModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('databaseSupportModal')">&times;</span>
+            <h3>Database Support</h3>
+            <ul>
+                <li>Database design, migration, and integration</li>
+                <li>ETL processes and data transformation</li>
+                <li>Maintaining data accuracy and ensuring quality assurance</li>
+            </ul>
+            <p>Optimize your database systems for seamless performance.</p>
+        </div>
+    </div>
+
+    <div id="toolSupportModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('toolSupportModal')">&times;</span>
+            <h3>Tool Support</h3>
+            <ul>
+                <li>Python libraries like Pandas, NumPy, and Matplotlib</li>
+                <li>SQL queries and database management</li>
+                <li>Data visualizations using Tableau and Power BI</li>
+            </ul>
+            <p>I provide expert guidance to help you master tools and tackle projects effectively.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <p>A glimpse of the projects I've worked on, showcasing my skills and expertise in data analysis and visualization.</p>
+    <div class="portfolio-filters">
+        <button class="filter-btn" data-filter="all">Show All</button>
+        <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+        <button class="filter-btn" data-filter="dashboards">Dashboards</button>
+    </div>
+    <div class="portfolio-container">
+        <!-- Project 1 -->
+        <div class="portfolio-item data-analysis" onclick="openModal('modal1')">
+            <img src="assets/project-images/gender-diversity.jpeg" alt="Gender Diversity in CS Publications">
+            <h3>Gender Diversity in CS Publications</h3>
+        </div>
+        <!-- Project 2 -->
+        <div class="portfolio-item data-analysis" onclick="openModal('modal2')">
+            <img src="assets/project-images/natural-disasters.jpeg" alt="Natural Disasters Analysis">
+            <h3>Natural Disasters Analysis</h3>
+        </div>
+        <!-- Project 3 -->
+        <div class="portfolio-item dashboards" onclick="openModal('modal3')">
+            <img src="assets/project-images/room-utilization.png" alt="Room Utilization Analysis">
+            <h3>Room Utilization Analysis</h3>
+        </div>
+    </div>
+
+    <!-- Modals -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Gender Diversity in CS Publications</h2>
+        <p>This project explores gender diversity trends in computer science publications using data from the DBLP API and Kaggle. It includes an exploratory analysis and an interactive web app built with Dash.</p>
+        <a href="https://github.com/Vamsi-Mudila/Gender-Diversity-CS-Publications" target="_blank">GitHub Repository</a> | 
+        <a href="assets/reports/Gender-Diversity-Report.pdf" target="_blank">Report</a>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Natural Disasters Analysis</h2>
+        <p>This project analyses the impact of natural disasters on mortality from 2000 to 2020 using EM-DAT data. Visualizations with Tableau and Power BI highlight trends and effects on global populations.</p>
+        <a href="https://github.com/Vamsi-Mudila/Natural-Disasters-Data-Analysis" target="_blank">GitHub Repository</a> | 
+        <a href="assets/reports/Natural-Disasters-Report.pdf" target="_blank">Report</a>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Room Utilization Analysis</h2>
+        <p>Optimized room utilization by analysing occupancy data and visualizing metrics like trends and anomalies using Dash. Proposed scalable solutions for real-time monitoring and predictive insights.</p>
+        <a href="https://github.com/Vamsi-Mudila/Room-Utilization-Analysis" target="_blank">GitHub Repository</a> | 
+        <a href="assets/reports/Room-Utilization-Report.pdf" target="_blank">Report</a>
+    </div>
+</div>
+
+</section>
 
     <div id="contactModal" class="modal">
         <div class="modal-content">
@@ -114,6 +336,5 @@
             <p><strong>GitHub:</strong> <a href="https://github.com/Vamsi-Mudila" target="_blank">github.com/Vamsi-Mudila</a></p>
         </div>
     </div>
-
 </body>
 </html>
