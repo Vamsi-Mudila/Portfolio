@@ -21,7 +21,6 @@ window.onclick = function (event) {
     }
 };
 
-
 // Skill Filter Functionality
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
@@ -35,7 +34,6 @@ document.querySelectorAll('.filter-btn').forEach(button => {
         });
     });
 });
-
 
 // Ensure all modal close buttons are functional
 document.querySelectorAll('.modal .close').forEach(button => {
@@ -103,30 +101,14 @@ function closeModal(modalId) {
     }
 }
 
-// Filter Portfolio Items
-document.querySelectorAll('.filter-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-        document.querySelectorAll('.portfolio-item').forEach(item => {
-            if (filter === 'all' || item.classList.contains(filter)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    });
-});
-
 // Close Modal on Outside Click
-window.onclick = function (event) {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
+window.addEventListener('click', function (event) {
+    document.querySelectorAll('.modal').forEach(modal => {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     });
-};
-
+});
 
 // Open Certification Modal
 function openCertModal(imgSrc, certTitle, certLink) {
@@ -148,10 +130,11 @@ function closeCertModal() {
     modal.style.display = "none";
 }
 
-// Close Modal on Click Outside
-window.onclick = function (event) {
-    var modal = document.getElementById("certModal");
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
+// Close Certification Modal on Outside Click
+window.addEventListener('click', function (event) {
+    document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
