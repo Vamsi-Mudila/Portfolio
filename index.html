@@ -164,98 +164,48 @@
     </div>
 </section>
 
-
+<!-- Certifications Section -->
 <section id="certifications" class="certifications">
     <h2>Certifications</h2>
-    <p>Here are some of the certifications I've earned in various areas of Data Science, Analytics, and Programming.</p>
+    <p>Here are some of the certifications I've earned in Data Science, Analytics, and Programming.</p>
 
     <div class="certs-container">
         <div class="cert-item" onclick="openCertModal('cert1')">
-            <iframe src="assets/certs/PFE.pdf"></iframe>
+            <img src="assets/certs/PFE.jpg" alt="Programming for Everybody">
             <h3>Programming for Everybody (Python)</h3>
         </div>
         <div class="cert-item" onclick="openCertModal('cert2')">
-            <iframe src="assets/certs/WWE.pdf"></iframe>
+            <img src="assets/certs/WWE.jpg" alt="Work Smarter with Microsoft Excel">
             <h3>Work Smarter with Microsoft Excel</h3>
         </div>
         <div class="cert-item" onclick="openCertModal('cert3')">
-            <iframe src="assets/certs/AMD.pdf"></iframe>
+            <img src="assets/certs/AMD.jpg" alt="Advanced Microsoft Data Analytics">
             <h3>Advanced Microsoft Data Analytics</h3>
         </div>
         <div class="cert-item" onclick="openCertModal('cert4')">
-            <iframe src="assets/certs/DWG.pdf"></iframe>
+            <img src="assets/certs/DWG.jpg" alt="Data Wrangling with Python">
             <h3>Data Wrangling with Python</h3>
         </div>
         <div class="cert-item" onclick="openCertModal('cert5')">
-            <iframe src="assets/certs/FDE.pdf"></iframe>
+            <img src="assets/certs/FDE.jpg" alt="Foundations of Data Engineering">
             <h3>Foundations of Data Engineering</h3>
         </div>
         <div class="cert-item" onclick="openCertModal('cert6')">
-            <iframe src="assets/certs/PDE.pdf"></iframe>
+            <img src="assets/certs/PDE.jpg" alt="Practical Data Ethics">
             <h3>Practical Data Ethics</h3>
         </div>
         <div class="cert-item" onclick="openCertModal('cert7')">
-            <iframe src="assets/certs/PDS.pdf"></iframe>
+            <img src="assets/certs/PDS.jpg" alt="Python for Data Science">
             <h3>Python for Data Science</h3>
         </div>
     </div>
 </section>
 
-<!-- Certification Modals -->
-<div id="cert1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('cert1')">&times;</span>
-        <h2>Programming for Everybody (Python)</h2>
-        <iframe src="assets/certs/PFE.pdf"></iframe>
-    </div>
-</div>
-
-<div id="cert2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('cert2')">&times;</span>
-        <h2>Work Smarter with Microsoft Excel</h2>
-        <iframe src="assets/certs/WWE.pdf"></iframe>
-    </div>
-</div>
-
-<div id="cert3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('cert3')">&times;</span>
-        <h2>Advanced Microsoft Data Analytics</h2>
-        <iframe src="assets/certs/AMD.pdf"></iframe>
-    </div>
-</div>
-
-<div id="cert4" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('cert4')">&times;</span>
-        <h2>Data Wrangling with Python</h2>
-        <iframe src="assets/certs/DWG.pdf"></iframe>
-    </div>
-</div>
-
-<div id="cert5" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('cert5')">&times;</span>
-        <h2>Foundations of Data Engineering</h2>
-        <iframe src="assets/certs/FDE.pdf"></iframe>
-    </div>
-</div>
-
-<div id="cert6" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('cert6')">&times;</span>
-        <h2>Practical Data Ethics</h2>
-        <iframe src="assets/certs/PDE.pdf"></iframe>
-    </div>
-</div>
-
-<div id="cert7" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('cert7')">&times;</span>
-        <h2>Python for Data Science</h2>
-        <iframe src="assets/certs/PDS.pdf"></iframe>
-    </div>
+<!-- Modal Structure for Enlarging Images -->
+<div id="certModal" class="modal">
+    <span class="close" onclick="closeCertModal()">&times;</span>
+    <img id="certModalImg" class="modal-content">
+    <div id="certModalCaption"></div>
 </div>
 
 <section id="services" class="services">
