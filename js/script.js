@@ -22,13 +22,13 @@ window.onclick = function (event) {
 };
 
 
-// Filter Skills
-document.querySelectorAll('.skills-filters .filter-btn').forEach(button => {
+// Skill Filter Functionality
+document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
         const filter = button.getAttribute('data-filter');
         document.querySelectorAll('.skill-card').forEach(card => {
             if (filter === 'all' || card.classList.contains(filter)) {
-                card.style.display = 'block';
+                card.style.display = 'inline-block';
             } else {
                 card.style.display = 'none';
             }
