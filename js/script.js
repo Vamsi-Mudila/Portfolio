@@ -138,3 +138,22 @@ window.addEventListener('click', function (event) {
         }
     });
 });
+
+
+// Initialize the interactive map
+function initMap() {
+    var map = L.map('map').setView([53.8008, -1.5491], 6); // Default: Leeds, UK
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([53.8008, -1.5491]).addTo(map)
+        .bindPopup("Vamsi Mudila is here!")
+        .openPopup();
+}
+
+// Load the map after the page loads
+document.addEventListener("DOMContentLoaded", function() {
+    initMap();
+});
