@@ -460,8 +460,8 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 70%;
-    max-height: 90%;
+    max-width: 85%;
+    max-height: 95%;
     position: relative;
 }
 
@@ -472,7 +472,7 @@ p {
 }
 
 .modal h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #333;
     margin: 10px 0;
 }
@@ -480,7 +480,7 @@ p {
 .modal a {
     display: inline-block;
     color: #5cb85c;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-decoration: none;
     font-weight: bold;
     margin-top: 5px;
