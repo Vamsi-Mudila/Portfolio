@@ -15,7 +15,29 @@ contactBtn.onclick = function () {
     contactModal.style.display = "block";
 };
 
-// Ensure all modal close buttons work
+window.onclick = function (event) {
+    if (event.target == contactModal) {
+        contactModal.style.display = "none";
+    }
+};
+
+
+// Skill Filter Functionality
+document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.skill-card').forEach(card => {
+            if (filter === 'all' || card.classList.contains(filter)) {
+                card.style.display = 'inline-block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+
+// Ensure all modal close buttons are functional
 document.querySelectorAll('.modal .close').forEach(button => {
     button.addEventListener('click', (event) => {
         const modal = event.target.closest('.modal');
@@ -65,46 +87,42 @@ document.querySelectorAll('.filter-btn').forEach(button => {
     });
 });
 
-// Open Certification Modal
-function openCertModal(certId) {
-    document.getElementById(certId).style.display = "block";
-}
-
-// Close Certification Modal
-function closeModal(certId) {
-    document.getElementById(certId).style.display = "none";
-}
-
-// Open General Modal
+// Open Modal
 function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    }
 }
 
-// Close General Modal
+// Close Modal
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    }
 }
 
-// Close Modals on Outside Click
+// Filter Portfolio Items
+document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Close Modal on Outside Click
 window.onclick = function (event) {
-    document.querySelectorAll('.modal').forEach(modal => {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     });
 };
-
-// Sort Certifications from Most Recent to Oldest
-document.addEventListener("DOMContentLoaded", function () {
-    const certContainer = document.querySelector('.certs-container');
-    const certItems = Array.from(certContainer.children);
-
-    certItems.sort((a, b) => {
-        const dateA = new Date(a.getAttribute("data-date"));
-        const dateB = new Date(b.getAttribute("data-date"));
-        return dateB - dateA; // Sort descending (most recent first)
-    });
-
-    certContainer.innerHTML = ""; // Clear container
-    certItems.forEach(item => certContainer.appendChild(item)); // Append sorted items
-});
