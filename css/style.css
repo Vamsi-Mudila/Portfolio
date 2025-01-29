@@ -169,27 +169,25 @@ p {
 
 /* Flexbox Layout for Proper Alignment */
 .intro-content {
+    max-width: 90%;  /* Expand container */
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    max-width: 80%;
-    margin: 0 auto;
+    gap: 20px; /* Keep image close */
 }
 
-/* Profile Image Styling */
-.profile-img {
-    width: 220px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Adjust Text Block */
 .intro-text {
-    max-width: 95%;
+    max-width: 100%;
+    flex: 1; /* Use remaining space */
     text-align: justify;
 }
+
+.profile-img {
+    width: 200px;
+    height: auto;
+}
+
 
 /* Intro Title */
 .intro-text h2 {
