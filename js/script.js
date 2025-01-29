@@ -130,26 +130,29 @@ window.onclick = function (event) {
 
 // Open Certification Modal
 function openCertModal(certId) {
-    const modal = document.getElementById(certId);
-    if (modal) {
+    var modal = document.getElementById("certModal");
+    var modalImg = document.getElementById("certModalImg");
+    var captionText = document.getElementById("certModalCaption");
+
+    var certItem = document.querySelector(`[onclick="openCertModal('${certId}')"] img`);
+    
+    if (certItem) {
         modal.style.display = "block";
+        modalImg.src = certItem.src;
+        captionText.innerHTML = certItem.alt;
     }
 }
 
 // Close Certification Modal
-function closeModal(certId) {
-    const modal = document.getElementById(certId);
-    if (modal) {
-        modal.style.display = "none";
-    }
+function closeCertModal() {
+    var modal = document.getElementById("certModal");
+    modal.style.display = "none";
 }
 
-// Close Modal on Outside Click
+// Close Modal on Click Outside
 window.onclick = function (event) {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
+    var modal = document.getElementById("certModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
 };
