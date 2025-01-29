@@ -315,73 +315,82 @@ p {
 /* Skills Section */
 .skills {
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px;
     background: #f8f9fa;
 }
 
 .skills h2 {
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.skills-filters {
-    margin: 20px 0;
+.skills p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
 }
 
-.skills-filters .filter-btn {
+/* Skill Filters */
+.skill-filters {
+    margin-bottom: 20px;
+}
+
+.skill-filters .filter-btn {
     padding: 8px 15px;
-    margin: 5px;
     border: 1px solid #5cb85c;
-    background: #fff;
+    background: white;
     color: #5cb85c;
+    font-size: 0.9rem;
     cursor: pointer;
+    margin: 5px;
     transition: all 0.3s;
 }
 
-.skills-filters .filter-btn:hover {
+.skill-filters .filter-btn:hover {
     background: #5cb85c;
-    color: #fff;
+    color: white;
 }
 
-/* Skills Container */
+/* Skill Cards */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
-/* Skill Card */
 .skill-card {
     background: white;
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
     transition: transform 0.3s;
+    min-width: 200px;
+    text-align: center;
+    position: relative;
 }
 
 .skill-card:hover {
     transform: scale(1.05);
-}
-
-/* Progress Bar */
-.progress-bar {
-    width: 100%;
-    height: 8px;
-    background: #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.progress-bar span {
-    display: block;
-    height: 100%;
     background: #5cb85c;
-    transition: width 1s ease-in-out;
+    color: white;
+}
+
+/* Skill Tags */
+.skill-tag {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #666;
+    margin-top: 5px;
+}
+
+.skill-card:hover .skill-tag {
+    color: white;
 }
 
 
