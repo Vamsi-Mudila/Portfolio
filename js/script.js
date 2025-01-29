@@ -138,13 +138,3 @@ window.addEventListener('click', function (event) {
         }
     });
 });
-
-
-// Ensure modal is properly centered on window resize
-window.addEventListener("resize", function () {
-    document.querySelectorAll(".modal-content").forEach(modal => {
-        modal.style.top = "50%";
-        modal.style.left = "50%";
-        modal.style.transform = "translate(-50%, -50%)";
-    });
-});
