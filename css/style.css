@@ -440,7 +440,7 @@ p {
     transform: scale(1.05);
 }
 
-/* Modal Styling */
+/* Modal for Enlarged PDF */
 .modal {
     display: none;
     position: fixed;
@@ -448,23 +448,25 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
 }
 
 .modal-content {
     background: #fff;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 20px;
-    width: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .modal-content iframe {
     width: 100%;
-    height: 400px;
+    height: 90%;
     border: none;
 }
 
@@ -474,17 +476,6 @@ p {
     right: 20px;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-.modal-content a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #5cb85c;
-}
-
-.modal-content a:hover {
-    text-decoration: underline;
 }
 
 
