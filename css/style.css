@@ -173,23 +173,27 @@ p {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    max-width: 80%;
+    max-width: 1100px; /* NEW: Increased width */
+    width: 90%; /* Ensures responsiveness */
     margin: 0 auto;
 }
 
+
 /* Profile Image Styling */
 .profile-img {
-    width: 220px;
+    width: 250px; /* NEW: Slightly larger image */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Adjust Text Block */
 .intro-text {
-    max-width: 95%;
+    max-width: 70%; /* NEW: More width for longer sentences */
     text-align: justify;
 }
+
 
 /* Intro Title */
 .intro-text h2 {
