@@ -170,42 +170,43 @@
     <p>Here are some of the certifications I've earned in Data Science, Analytics, and Programming.</p>
 
     <div class="certs-container">
-        <div class="cert-item" onclick="openCertModal('cert1')">
-            <img src="assets/certs/PFE.jpg" alt="Programming for Everybody">
+        <div class="cert-item" onclick="openCertModal('PFE.jpg', 'Programming for Everybody (Python)', 'https://coursera.org/verify/D6ME97ZEL385')">
+            <img src="assets/certs/PFE.jpg" alt="Programming for Everybody (Python)">
             <h3>Programming for Everybody (Python)</h3>
         </div>
-        <div class="cert-item" onclick="openCertModal('cert2')">
+        <div class="cert-item" onclick="openCertModal('WWE.jpg', 'Work Smarter with Microsoft Excel', 'https://coursera.org/verify/Z6XBF2GMCBN')">
             <img src="assets/certs/WWE.jpg" alt="Work Smarter with Microsoft Excel">
             <h3>Work Smarter with Microsoft Excel</h3>
         </div>
-        <div class="cert-item" onclick="openCertModal('cert3')">
+        <div class="cert-item" onclick="openCertModal('AMD.jpg', 'Advanced Microsoft Data Analytics', 'https://coursera.org/verify/Y6YVA8DLWJ5G')">
             <img src="assets/certs/AMD.jpg" alt="Advanced Microsoft Data Analytics">
             <h3>Advanced Microsoft Data Analytics</h3>
         </div>
-        <div class="cert-item" onclick="openCertModal('cert4')">
+        <div class="cert-item" onclick="openCertModal('DWG.jpg', 'Data Wrangling with Python', 'https://coursera.org/verify/DGVFSM547VD4')">
             <img src="assets/certs/DWG.jpg" alt="Data Wrangling with Python">
             <h3>Data Wrangling with Python</h3>
         </div>
-        <div class="cert-item" onclick="openCertModal('cert5')">
+        <div class="cert-item" onclick="openCertModal('FDE.jpg', 'Foundations of Data Engineering', 'https://coursera.org/verify/ZC3HE88742NL')">
             <img src="assets/certs/FDE.jpg" alt="Foundations of Data Engineering">
             <h3>Foundations of Data Engineering</h3>
         </div>
-        <div class="cert-item" onclick="openCertModal('cert6')">
+        <div class="cert-item" onclick="openCertModal('PDE.jpg', 'Practical Data Ethics', 'https://coursera.org/verify/1ZE6DCQU4AAM')">
             <img src="assets/certs/PDE.jpg" alt="Practical Data Ethics">
             <h3>Practical Data Ethics</h3>
         </div>
-        <div class="cert-item" onclick="openCertModal('cert7')">
+        <div class="cert-item" onclick="openCertModal('PDS.jpg', 'Python for Data Science', 'https://coursera.org/verify/W6TZ7AEQGCM4')">
             <img src="assets/certs/PDS.jpg" alt="Python for Data Science">
             <h3>Python for Data Science</h3>
         </div>
     </div>
 </section>
 
-<!-- Modal Structure for Enlarging Images -->
+<!-- Modal Structure for Enlarged Images -->
 <div id="certModal" class="modal">
     <span class="close" onclick="closeCertModal()">&times;</span>
     <img id="certModalImg" class="modal-content">
     <div id="certModalCaption"></div>
+    <a id="certLink" href="#" target="_blank">Verify Certificate</a>
 </div>
 
 <section id="services" class="services">
