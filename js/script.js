@@ -126,3 +126,30 @@ window.onclick = function (event) {
         }
     });
 };
+
+
+// Open Certification Modal
+function openCertModal(certId) {
+    const modal = document.getElementById(certId);
+    if (modal) {
+        modal.style.display = "block";
+    }
+}
+
+// Close Certification Modal
+function closeModal(certId) {
+    const modal = document.getElementById(certId);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Close Modal on Outside Click
+window.onclick = function (event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+};
