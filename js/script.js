@@ -132,14 +132,14 @@ window.onclick = function (event) {
 function openCertModal(imgSrc, certTitle, certLink) {
     var modal = document.getElementById("certModal");
     var modalImg = document.getElementById("certModalImg");
-    var captionText = document.getElementById("certModalCaption");
+    var titleText = document.getElementById("certModalTitle");
     var certLinkElement = document.getElementById("certLink");
 
-    modal.style.display = "flex";  // Center the modal
+    modal.style.display = "flex";  // Center modal
     modalImg.src = "assets/certs/" + imgSrc;
-    captionText.innerHTML = certTitle;
+    titleText.innerHTML = certTitle;
     certLinkElement.href = certLink;
-    certLinkElement.innerHTML = "Verify Certificate";
+    certLinkElement.innerHTML = "View Certificate";
 }
 
 // Close Certification Modal
