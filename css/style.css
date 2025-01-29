@@ -454,40 +454,49 @@ p {
     display: flex;
 }
 
+/* Enlarged Certificate Styling */
 .modal-content {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 105%;
-    max-height: 125%;
+    max-width: 80%;  /* Adjusted size */
+    max-height: 90%; /* Adjusted size */
     position: relative;
 }
 
+/* Certificate Image */
 .modal-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
+/* Certificate Name */
 .modal h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #333;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
+/* View Certificate Link */
 .modal a {
     display: inline-block;
     color: #5cb85c;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: 2px solid #5cb85c;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
 .modal a:hover {
-    text-decoration: underline;
+    background: #5cb85c;
+    color: white;
 }
 
 /* Close Button */
