@@ -73,44 +73,6 @@ particlesJS("particles-js", {
     retina_detect: true
 });
 
-
-// Open Certification Modal with Correct PDF & Title
-function openCertModal(certId, certTitle) {
-    const certModal = document.getElementById("certModal");
-    const certFrame = document.getElementById("certFrame");
-    const certTitleElement = document.getElementById("certTitle");
-
-    // Mapping Certificate IDs to Files
-    const certMap = {
-        cert1: "assets/certs/AMD.pdf",
-        cert2: "assets/certs/DWG.pdf",
-        cert3: "assets/certs/FDE.pdf",
-        cert4: "assets/certs/PDE.pdf",
-        cert5: "assets/certs/PDS.pdf",
-        cert6: "assets/certs/WWE.pdf",
-        cert7: "assets/certs/PFE.pdf"
-    };
-
-    certFrame.src = certMap[certId];   // Load the correct certificate
-    certTitleElement.textContent = certTitle; // Display the certificate title
-    certModal.style.display = "flex"; // Show modal
-}
-
-// Close Certification Modal
-function closeCertModal() {
-    document.getElementById("certModal").style.display = "none";
-    document.getElementById("certFrame").src = ""; // Reset PDF
-}
-
-// Close Modal on Clicking Outside
-window.onclick = function(event) {
-    const certModal = document.getElementById("certModal");
-    if (event.target === certModal) {
-        closeCertModal();
-    }
-};
-
-
 // Filter Portfolio Items
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
