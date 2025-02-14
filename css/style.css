@@ -211,6 +211,10 @@ p {
     margin-bottom: 15px;
 }
 
+.intro-text p:last-child {
+    margin-bottom: 5px; /* Reduce space below the last paragraph */
+}
+
 /* Instagram Link */
 .intro-text a {
     color: #5cb85c;
