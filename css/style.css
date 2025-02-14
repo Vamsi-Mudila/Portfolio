@@ -212,7 +212,7 @@ p {
 }
 
 .intro-text p:last-child {
-    margin-bottom: 15px; /* Reduce space below the last paragraph */
+    margin-bottom: 25px; /* Reduce space below the last paragraph */
 }
 
 /* Instagram Link */
