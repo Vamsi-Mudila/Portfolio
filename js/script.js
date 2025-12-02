@@ -148,7 +148,7 @@ function initMap() {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    L.marker([53.8008, -1.5491]).addTo(map)
+    L.marker([51.8787, -0.4200]).addTo(map)
         .bindPopup("Vamsi Mudila is here!")
         .openPopup();
 }
