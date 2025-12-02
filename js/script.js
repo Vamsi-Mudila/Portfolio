@@ -142,7 +142,7 @@ window.addEventListener('click', function (event) {
 
 // Initialize the interactive map
 function initMap() {
-    var map = L.map('map').setView([53.8008, -1.5491], 6); // Default: Luton, UK
+    var map = L.map('map').setView([51.8787, -0.4200], 6); // Default: Luton, UK
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
