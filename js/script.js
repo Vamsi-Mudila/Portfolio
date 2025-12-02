@@ -142,18 +142,41 @@ window.addEventListener('click', function (event) {
 
 // Initialize the interactive map
 function initMap() {
-    var map = L.map('map').setView([53.8008, -1.5491], 6); // Default: Leeds, UK
+    // Try to get current location
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+
+    // Initialize map with user's location
+    const map = L.map('map').setView([lat, lon], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([lat, lon]).addTo(map).bindPopup("You are here!").openPopup();
+}
+
+function showError(error) {
+    console.warn(error);
+
+    // Fall back to Leeds if location permission denied or error occurs
+    const map = L.map('map').setView([53.8008, -1.5491], 10);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
     L.marker([53.8008, -1.5491]).addTo(map)
-        .bindPopup("Vamsi Mudila is here!")
+        .bindPopup("Default location: Leeds, UK")
         .openPopup();
 }
 
-// Load the map after the page loads
-document.addEventListener("DOMContentLoaded", function() {
-    initMap();
-});
+document.addEventListener("DOMContentLoaded", initMap);
